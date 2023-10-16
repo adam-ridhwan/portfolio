@@ -32,9 +32,9 @@ export const ProjectList = () => {
     },
     {
       name: 'Geaux TV',
-      description: 'A seamless TV streaming platform offering a library of live tv shows.',
-      image: '/mountain.jpg',
-      link: 'https://geaux-tv.vercel.app',
+      description: `A TV streaming platform offering a library of live tv shows. Features include a custom video player, url routing, and a responsive design.`,
+      image: '/geaux.png',
+      link: 'https://geaux-tv.vercel.app/tv/465',
     },
   ];
 
