@@ -1,5 +1,3 @@
-import { EnvelopeIcon } from '@heroicons/react/24/solid';
-
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 
 export const Bio = () => {
