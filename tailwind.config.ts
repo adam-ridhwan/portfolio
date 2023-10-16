@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { blue, cyan, gold, green, pink, yellow } from '@radix-ui/colors';
+import { blue, cyan, gold, gray, green, pink, yellow } from '@radix-ui/colors';
 
 module.exports = {
   darkMode: ['class'],
@@ -12,9 +12,8 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
       screens: {
-        '2xl': '1400px',
+        '2xl': '768px',
       },
     },
     extend: {
@@ -24,6 +23,7 @@ module.exports = {
         ...pink,
         ...green,
         ...yellow,
+        ...gray,
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
