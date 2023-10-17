@@ -1,12 +1,11 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 
 export const Bio = () => {
   return (
     <>
       <section className='mb-8 pt-10'>
         <div className='flex flex-col items-center gap-4 md:flex-row md:gap-8'>
-          <Avatar className='h-32 w-32'>
+          <Avatar className='ring-offset h-32 w-32 border-4 border-blue-400 ring-4 ring-blue-200'>
             <AvatarImage src='/me.jpeg' />
             <AvatarFallback>AR</AvatarFallback>
           </Avatar>
