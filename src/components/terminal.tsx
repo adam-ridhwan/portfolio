@@ -3,6 +3,11 @@ import { BiSolidFolder } from 'react-icons/bi';
 export const Terminal = () => {
   return (
     <>
+      <div className='mb-4 flex flex-col gap-2'>
+        <span className='text-2xl font-semibold text-secondary-foreground'>About me</span>
+        <span className='text-lg font-light text-muted-foreground'>Terminal insights:</span>
+      </div>
+
       <div className='relative mb-16 rounded-lg shadow-lg'>
         <div className='absolute mt-2 flex flex-row items-center gap-2 pl-2'>
           <div className='aspect-square w-3 rounded-full bg-red-500' />
@@ -66,7 +71,7 @@ export const Terminal = () => {
 
           <div className='flex flex-col font-mono'>
             <span>&gt; Adam.education</span>
-            <span className='text-orange-500'>{`"MS Software Development - Boston University`}</span>
+            <span className='text-orange-500'>{`"MS Software Development - Boston University"`}</span>
           </div>
 
           <div className='flex flex-col font-mono'>

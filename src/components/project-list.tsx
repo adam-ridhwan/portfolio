@@ -1,9 +1,3 @@
-import Image from 'next/image';
-
-import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
 import { ProjectItem } from '@/components/project-item';
 
 export type Project = {
@@ -15,6 +9,12 @@ export type Project = {
 
 export const ProjectList = () => {
   const projects: Project[] = [
+    {
+      name: 'Geaux TV',
+      description: `A TV streaming platform offering a library of live tv shows. Features include a custom video player, url routing, and a responsive design.`,
+      image: '/geaux.png',
+      link: 'https://geaux-tv.vercel.app/tv/465',
+    },
     {
       name: 'Pondero',
       description:
@@ -30,12 +30,6 @@ export const ProjectList = () => {
       image: '/flair.png',
       link: 'https://flair.vercel.app',
     },
-    {
-      name: 'Geaux TV',
-      description: `A TV streaming platform offering a library of live tv shows. Features include a custom video player, url routing, and a responsive design.`,
-      image: '/geaux.png',
-      link: 'https://geaux-tv.vercel.app/tv/465',
-    },
   ];
 
   return (
@@ -43,7 +37,9 @@ export const ProjectList = () => {
       <section>
         <div className='mb-4 flex flex-col gap-2'>
           <span className='text-2xl font-semibold text-secondary-foreground'>Projects</span>
-          <span className='text-md font-light text-muted-foreground'>Here is what I&apos;ve worked on:</span>
+          <span className='text-lg font-light text-muted-foreground'>
+            Here&apos;s what I&apos;ve been up to:
+          </span>
         </div>
 
         {projects.map(project => (

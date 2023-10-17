@@ -1,6 +1,8 @@
 import { Bio } from '@/components/bio';
+import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
 import { ProjectList } from '@/components/project-list';
+import { TechStack } from '@/components/tech-stack';
 import { Terminal } from '@/components/terminal';
 
 export default function Home() {
@@ -11,12 +13,11 @@ export default function Home() {
       <main className='relative my-[55px] flex flex-col px-4 md:container'>
         <Bio />
         <Terminal />
+        <TechStack />
         <ProjectList />
       </main>
 
-      <footer className='container mb-10 flex flex-col items-center justify-center text-sm text-muted-foreground'>
-        Made by Adam Ridhwan © {new Date().getFullYear()}
-      </footer>
+      <Footer />
     </>
   );
 }
