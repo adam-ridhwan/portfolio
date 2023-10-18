@@ -22,12 +22,12 @@ export const Terminal = () => {
 
         <div className='flex flex-col gap-4 rounded-b-lg bg-gray-100 p-4'>
           <div className='flex flex-col font-mono'>
-            <span>&gt; Adam.currentLocation</span>
+            <span>&gt; Current location</span>
             <span className='text-orange-500'>{`"Boston, MA"`}</span>
           </div>
 
           <div className='flex flex-col font-mono'>
-            <span>&gt; Adam.contactInfo</span>
+            <span>&gt; Contact info</span>
             <div className='text-orange-500'>
               [&quot;
               <a href='mailto:adamridhwan.1@gmail.com' className='text-cyan-500 hover:text-cyan-700'>
@@ -54,7 +54,7 @@ export const Terminal = () => {
           </div>
 
           <div className='flex flex-col font-mono'>
-            <span>&gt; Adam.resume</span>
+            <span>&gt; Resume</span>
 
             <div className='text-orange-500'>
               &quot;
@@ -70,12 +70,12 @@ export const Terminal = () => {
           </div>
 
           <div className='flex flex-col font-mono'>
-            <span>&gt; Adam.education</span>
+            <span>&gt; Education</span>
             <span className='text-orange-500'>{`"MS Software Development - Boston University"`}</span>
           </div>
 
           <div className='flex flex-col font-mono'>
-            <span>&gt; Adam.skills</span>
+            <span>&gt; Skills</span>
             <span className='text-orange-500'>{`["React", "Next.js", "TypeScript", "CSS"]`}</span>
           </div>
         </div>
