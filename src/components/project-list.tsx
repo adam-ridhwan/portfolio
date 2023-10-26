@@ -30,6 +30,12 @@ export const ProjectList = () => {
       image: '/flair.png',
       link: 'https://flair.vercel.app',
     },
+    {
+      name: 'Quizzzy',
+      description: `An interactive quiz platform designed to make quizzes easy. It offers a seamless experience for educators, students, and trivia enthusiasts alike.`,
+      image: '/quizzzy.png',
+      link: 'https://quizzzy-mu.vercel.app/',
+    },
   ];
 
   return (
@@ -45,6 +51,8 @@ export const ProjectList = () => {
         {projects.map(project => (
           <ProjectItem key={project.name} project={project} />
         ))}
+
+        {/*<Image src='/ocean_1.png' alt='folder' width={500} height={500} />*/}
       </section>
     </>
   );
