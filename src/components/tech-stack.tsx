@@ -42,19 +42,7 @@ export const TechStack = () => {
 
   return (
     <>
-      <section className='relative'>
-        {/*<Orbit height='h-20' color='bg-amber11' className='bottom-0 z-20 translate-x-12 translate-y-16' />*/}
-
-        {/*<div className='absolute bottom-0 right-0 z-10 aspect-square h-40 -translate-y-20 translate-x-32 rounded-2xl bg-green2' />*/}
-        {/*<Orbit*/}
-        {/*  height='h-20'*/}
-        {/*  color='bg-green11'*/}
-        {/*  className='bottom-0 right-0 z-20 -translate-y-28 translate-x-16'*/}
-        {/*/>*/}
-
-        {/*<div className='bg-tomato3 absolute bottom-0 left-0 z-10 aspect-square h-20 translate-y-8 rounded-2xl rounded-bl-[40px] opacity-60' />*/}
-        {/*<div className='bg-iris3 absolute bottom-0 left-0 aspect-square h-20 translate-x-24 translate-y-12 rounded-2xl rounded-tr-[40px]' />*/}
-
+      <section>
         <div className='mb-4 flex flex-col gap-2'>
           <span className='text-2xl font-semibold text-secondary-foreground'>Tech stack</span>
           <span className='text-lg font-light text-muted-foreground'>
@@ -118,7 +106,7 @@ export const TechStack = () => {
             </TechStackContainer>
           </div>
 
-          <div className='relative z-50 flex-1 flex-col md:flex'>
+          <div className='flex-1 flex-col md:flex'>
             <div className='flex flex-col gap-4'>
               <span className='text-xl font-medium text-secondary-foreground'>
                 I use a combination of modern technologies to build efficient and scalable applications.
