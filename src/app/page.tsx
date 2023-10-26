@@ -1,6 +1,6 @@
 import { Bio } from '@/components/bio';
 import { Footer } from '@/components/footer';
-import { Navbar } from '@/components/navbar';
+import { Header } from '@/components/header';
 import { ProjectList } from '@/components/project-list';
 import { TechStack } from '@/components/tech-stack';
 import { Terminal } from '@/components/terminal';
@@ -8,9 +8,9 @@ import { Terminal } from '@/components/terminal';
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Header />
 
-      <main className='relative my-[55px] flex flex-col px-4 md:container'>
+      <main className='relative my-[55px] flex flex-col gap-20  overflow-x-hidden px-4 md:container md:overflow-visible'>
         <Bio />
         <Terminal />
         <TechStack />
