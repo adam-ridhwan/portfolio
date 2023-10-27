@@ -2,6 +2,8 @@ import { BiSolidFolder } from 'react-icons/bi';
 
 import Orbit from '@/components/orbit';
 
+import { Folder } from '../../public/icons/folder';
+
 export const Terminal = () => {
   return (
     <>
@@ -14,7 +16,7 @@ export const Terminal = () => {
         />
 
         <div className='relative mb-4 flex flex-col gap-2'>
-          <span className='text-2xl font-semibold text-secondary-foreground'>About me</span>
+          <span className='text-2xl font-semibold text-secondary-foreground'>About Me</span>
           <span className='text-lg font-light text-muted-foreground'>Terminal insights:</span>
         </div>
 
@@ -26,8 +28,9 @@ export const Terminal = () => {
           </div>
 
           <div className='flex h-[30px] flex-row items-center justify-center gap-2 rounded-t-lg bg-gray-200 pl-3'>
-            <BiSolidFolder className='text-cyan-400' />
-            <span className='font-semibold text-secondary-foreground'>adam -- -zsh --80x24</span>
+            {/*<BiSolidFolder className='text-cyan-400' />*/}
+            <Folder />
+            <span className='font-semibold text-secondary-foreground'>adam</span>
           </div>
 
           <div className='flex flex-col gap-4 rounded-b-lg bg-gray-100 p-4'>
