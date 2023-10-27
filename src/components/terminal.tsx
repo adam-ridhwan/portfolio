@@ -28,7 +28,6 @@ export const Terminal = () => {
           </div>
 
           <div className='flex h-[30px] flex-row items-center justify-center gap-2 rounded-t-lg bg-gray-200 pl-3'>
-            {/*<BiSolidFolder className='text-cyan-400' />*/}
             <Folder />
             <span className='font-semibold text-secondary-foreground'>adam</span>
           </div>

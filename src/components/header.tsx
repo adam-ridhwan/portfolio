@@ -1,7 +1,6 @@
-import Image from 'next/image';
-
 import { GitHub } from '../../public/icons/github';
 import { LinkedIn } from '../../public/icons/linkedin';
+import { React } from '../../public/icons/react';
 
 export const Header = () => {
   return (
@@ -12,11 +11,6 @@ export const Header = () => {
         </div>
 
         <div className='flex flex-row items-center gap-4'>
-          <a href='mailto:adamridhwan.1@gmail.com'>
-            <span className='sr-only'>Mail</span>
-            <Image src='/icons/mail.svg' alt='mail' width={500} height={500} className='h-7 w-7' />
-          </a>
-
           <a href='https://www.linkedin.com/in/adam-ridhwan/' target='_blank'>
             <span className='sr-only'>LinkedIn</span>
             <LinkedIn />
@@ -25,6 +19,13 @@ export const Header = () => {
           <a href='https://github.com/adam-ridhwan' target='_blank'>
             <span className='sr-only'>GitHub</span>
             <GitHub />
+          </a>
+
+          <a
+            href='mailto:adamridhwan.1@gmail.com'
+            className='inline-flex h-9 items-center justify-center whitespace-nowrap rounded-md border border-input bg-transparent px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50'
+          >
+            Contact
           </a>
         </div>
       </header>

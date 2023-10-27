@@ -1,4 +1,5 @@
 import { Bio } from '@/components/bio';
+import Contact from '@/components/contact';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { ProjectList } from '@/components/project-list';
@@ -15,6 +16,7 @@ export default function Home() {
         <Terminal />
         <TechILove />
         <ProjectList />
+        {/*<Contact />*/}
       </main>
 
       <Footer />
