@@ -39,12 +39,12 @@ export const ProjectItem = ({ project: { name, link, image, description } }: Pro
             <span className='whitespace-nowrap text-xl font-medium text-secondary-foreground group-hover/item:text-primary'>
               {name}
             </span>
-            {/*<Link*/}
-            {/*  className={cn(*/}
-            {/*    '-translate-x-1 translate-y-1 transition-all',*/}
-            {/*    'group-hover/item:translate-x-0 group-hover/item:translate-y-0 group-hover/item:fill-primary'*/}
-            {/*  )}*/}
-            {/*/>*/}
+            <Link
+              className={cn(
+                'h-5 w-5 -translate-x-1 translate-y-1 transition-all',
+                'group-hover/item:translate-x-0 group-hover/item:translate-y-0 group-hover/item:fill-primary'
+              )}
+            />
           </div>
           <span className='text-md font-light text-muted-foreground'>{description}</span>
         </div>
