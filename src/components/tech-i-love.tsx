@@ -129,12 +129,12 @@ export const TechILove = () => {
 
           <div className='flex-1 flex-col md:flex'>
             <div className='flex flex-col gap-2'>
-              <span className='text-lg font-light text-muted-foreground'>
+              <span className='text-md font-light text-muted-foreground'>
                 Not to give a generic answer, but I truly think the most suitable technology for a task is the
                 one that fits best.
               </span>
 
-              <span className='text-lg font-light text-muted-foreground'>
+              <span className='text-md font-light text-muted-foreground'>
                 However, there are certain technologies I particularly enjoy using. My choice tech stack for
                 personal projects is primarily:
               </span>
