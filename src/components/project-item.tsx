@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
+import { useWindowSize } from '@uidotdev/usehooks';
 
 import { cn } from '@/lib/utils';
 import { Project } from '@/components/project-list';
@@ -8,11 +9,29 @@ import { Link } from '../../public/icons/link';
 
 type Props = {
   project: Project;
+  hoveredItem: string | null;
+  setHoveredItem: Dispatch<SetStateAction<string | null>>;
 };
 
-export const ProjectItem = ({ project: { name, link, image, description } }: Props) => {
+export const ProjectItem = ({
+  project: { id, name, link, image, description },
+  hoveredItem,
+  setHoveredItem,
+}: Props) => {
+  const { width } = useWindowSize();
+
+  const handleMouseEnter = (id: string) => setHoveredItem(id);
+  const handleMouseLeave = () => setHoveredItem(null);
+
   return (
-    <li className={cn('group/item rounded-lg transition-colors sm:hover:bg-muted/70')}>
+    <li
+      className={cn(
+        'group/item rounded-lg transition-opacity sm:hover:bg-muted/70',
+        width! > 640 && hoveredItem && hoveredItem !== id && 'opacity-50'
+      )}
+      onMouseEnter={() => handleMouseEnter(id)}
+      onMouseLeave={handleMouseLeave}
+    >
       <a
         key={name}
         href={`${link}`}
@@ -35,7 +54,7 @@ export const ProjectItem = ({ project: { name, link, image, description } }: Pro
         </div>
 
         <div>
-          <div className='hidden flex-row items-center gap-2 sm:flex'>
+          <div className='hidden flex-row items-center gap-1 sm:flex'>
             <span className='whitespace-nowrap text-xl font-medium text-secondary-foreground group-hover/item:text-primary'>
               {name}
             </span>
