@@ -26,7 +26,7 @@ export const ProjectItem = ({
   return (
     <li
       className={cn(
-        'group/item rounded-lg transition-opacity sm:hover:bg-muted/70',
+        'group/item rounded-lg transition-all sm:hover:bg-muted/70',
         width! > 640 && hoveredItem && hoveredItem !== id && 'opacity-50'
       )}
       onMouseEnter={() => handleMouseEnter(id)}
