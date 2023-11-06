@@ -43,22 +43,24 @@ export const Bio = () => {
         <div className='relative flex flex-col items-center gap-4'>
           <H1>Adam Ridhwan</H1>
 
-          <H2 className='animate-text-up m-0 font-medium'>Fullstack software engineer</H2>
+          <H2 className='m-0 font-medium'>Fullstack software engineer</H2>
 
-          <P className=' m-0 text-center'>I build things for the web. </P>
+          <P className='m-0 text-center'>I build things for the web. </P>
 
           <div className='mt-4 flex flex-row items-center justify-center gap-4'>
-            <a href='mailto:adamridhwan.1@gmail.com'>
+            <a href='mailto:adamridhwan.1@gmail.com' className='h-8 w-8'>
               <span className='sr-only'>Contact</span>
               <Mail />
             </a>
 
-            <a href='https://github.com/adam-ridhwan' target='_blank'>
+            <a href='https://github.com/adam-ridhwan' target='_blank' className='h-8 w-8'>
               <span className='sr-only'>LinkedIn</span>
+              {/*<Mail />*/}
+
               <GitHub />
             </a>
 
-            <a href='https://www.linkedin.com/in/adam-ridhwan/' target='_blank'>
+            <a href='https://www.linkedin.com/in/adam-ridhwan/' target='_blank' className='h-8 w-8'>
               <span className='sr-only'>GitHub</span>
               <LinkedIn />
             </a>
@@ -66,6 +68,7 @@ export const Bio = () => {
             <a
               href='https://docs.google.com/document/d/1qGoBMpqtCnwT3wELMZ21kWM2lrArJ6G6l2-8Tcj-sOk/edit?usp=sharing'
               target='_blank'
+              className='h-8 w-8'
             >
               <span className='sr-only'>Resume</span>
               <Resume />
