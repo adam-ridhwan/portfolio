@@ -4,6 +4,7 @@ import { useWindowSize } from '@uidotdev/usehooks';
 
 import { cn } from '@/lib/utils';
 import { Project } from '@/components/project-list';
+import P from '@/components/typography/p';
 
 import { Link } from '../../public/icons/link';
 
@@ -39,7 +40,7 @@ export const ProjectItem = ({
         className='flex flex-col gap-2 sm:flex-row sm:gap-8 sm:p-4'
       >
         <div className='flex flex-row items-center gap-2 sm:hidden'>
-          <span className='text-xl font-medium text-secondary-foreground'>{name}</span>
+          <span className='text-lg font-medium text-secondary-foreground'>{name}</span>
         </div>
 
         <div className='relative aspect-video w-full sm:min-w-[250px] sm:max-w-[250px] '>
@@ -60,12 +61,12 @@ export const ProjectItem = ({
             </span>
             <Link
               className={cn(
-                'h-5 w-5 -translate-x-1 translate-y-1 transition-all',
+                'h-5 w-5 -translate-x-1 translate-y-1 fill-secondary-foreground transition-all',
                 'group-hover/item:translate-x-0 group-hover/item:translate-y-0 group-hover/item:fill-primary'
               )}
             />
           </div>
-          <span className='text-md font-light text-muted-foreground'>{description}</span>
+          <P>{description}</P>
         </div>
       </a>
     </li>

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import { ProjectItem } from '@/components/project-item';
+import H2 from '@/components/typography/h2';
 
 export type Project = {
   id: string;
@@ -52,13 +53,8 @@ export const ProjectList = () => {
 
   return (
     <>
-      <section className='flex flex-col gap-8'>
-        <div className='flex flex-col gap-2'>
-          <span className='text-2xl font-semibold text-secondary-foreground'>Projects</span>
-          <span className='text-lg font-light text-muted-foreground'>
-            Here&apos;s what I&apos;ve been up to:
-          </span>
-        </div>
+      <section className='flex flex-col'>
+        <H2>PROJECTS</H2>
 
         <ol className='group flex flex-col gap-8 sm:gap-2'>
           {PROJECTS.map(project => (

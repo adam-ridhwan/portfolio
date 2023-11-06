@@ -1,22 +1,17 @@
+import { About } from '@/components/about';
 import { Bio } from '@/components/bio';
-import Contact from '@/components/contact';
 import { Footer } from '@/components/footer';
-import { Header } from '@/components/header';
 import { ProjectList } from '@/components/project-list';
-import { TechILove } from '@/components/tech-i-love';
-import { Terminal } from '@/components/terminal';
+import { Skills } from '@/components/skills';
 
 export default function Home() {
   return (
     <>
-      <Header />
-
-      <main className='relative my-[55px] flex flex-col gap-20  overflow-x-hidden px-4 md:container md:overflow-visible'>
+      <main className='relative flex flex-col gap-20 overflow-x-hidden px-4 md:container md:overflow-visible'>
         <Bio />
-        <Terminal />
-        <TechILove />
+        <About />
+        <Skills />
         <ProjectList />
-        {/*<Contact />*/}
       </main>
 
       <Footer />

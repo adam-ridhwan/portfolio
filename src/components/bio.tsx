@@ -1,61 +1,77 @@
 import Image from 'next/image';
 
-import { cn } from '@/lib/utils';
-import { Avatar } from '@/components/ui/avatar';
-import Orbit from '@/components/orbit';
+import H1 from '@/components/typography/h1';
+import H2 from '@/components/typography/h2';
+import P from '@/components/typography/p';
+
+import { GitHub } from '../../public/icons/github';
+import { LinkedIn } from '../../public/icons/linkedin';
+import { Mail } from '../../public/icons/mail';
+import { React } from '../../public/icons/react';
+import { Resume } from '../../public/icons/resume';
 
 export const Bio = () => {
   return (
     <>
-      <section className='relative pt-10 md:mt-16'>
-        <div className='flex flex-col items-center gap-4 md:flex-row md:gap-8'>
-          <Avatar className='ring-offset h-32 w-32 border-4 border-blue-400 ring-4 ring-blue-200'>
+      <section className='relative pt-20  md:pt-16'>
+        <div className='absolute left-0 top-0 -translate-x-[17rem] -translate-y-12 md:top-1/2 md:-translate-x-[19rem] md:-translate-y-20'>
+          <div className='relative aspect-square w-96 rotate-[60deg]'>
             <Image
-              src='/images/me.jpeg'
-              alt='me'
               priority
-              width={500}
+              src='/images/glass-element-25.png'
+              alt='glass'
               height={500}
-              className='h-full w-full translate-y-4 scale-[1.3]'
+              width={500}
+              className='object-cover'
             />
-          </Avatar>
-
-          <div className='flex flex-col gap-2'>
-            <span className='text-3xl font-bold text-secondary-foreground md:text-4xl'>
-              Hello, I&apos;m Adam 👋
-            </span>
-
-            <div className='flex flex-col items-center text-lg font-light text-muted-foreground md:items-start md:text-xl'>
-              <span>I&apos;m a software engineer 🖥️</span>
-              <span>avid badminton player 🏸</span>
-              <span>& keyboard enthusiast ⌨️🪛</span>
-            </div>
           </div>
         </div>
 
-        <Orbit
-          height='h-40'
-          color='bg-orange11'
-          animate='animate-spin-slow'
-          className={cn('left-0 top-0 -translate-x-28 translate-y-4', 'md:translate-y-28')}
-        />
+        <div className='absolute bottom-0 right-0 translate-x-64 translate-y-52 md:top-1/2 md:-translate-y-20 md:translate-x-[19rem]'>
+          <div className='relative aspect-square w-96 -rotate-[160deg]'>
+            <Image
+              priority
+              src='/images/glass-element-26.png'
+              alt='glass'
+              height={500}
+              width={500}
+              className='object-cover'
+            />
+          </div>
+        </div>
 
-        <Orbit
-          height='h-32'
-          color='bg-blue12'
-          animate='animate-spin-slow'
-          className={cn(
-            'overflow right-0 top-0 -translate-y-4 translate-x-16',
-            `md:left-1/2 md:top-0 md:translate-x-7 md:translate-y-0`
-          )}
-        />
+        <div className='relative flex flex-col items-center gap-4'>
+          <H1>Adam Ridhwan</H1>
 
-        <Orbit
-          height='h-20'
-          color='bg-blue12'
-          animate='animate-spin-slow'
-          className={cn('bottom-0 left-0 -translate-x-8 translate-y-8 md:hidden')}
-        />
+          <H2 className='animate-text-up m-0 font-medium'>Fullstack software engineer</H2>
+
+          <P className=' m-0 text-center'>I build things for the web. </P>
+
+          <div className='mt-4 flex flex-row items-center justify-center gap-4'>
+            <a href='mailto:adamridhwan.1@gmail.com'>
+              <span className='sr-only'>Contact</span>
+              <Mail />
+            </a>
+
+            <a href='https://github.com/adam-ridhwan' target='_blank'>
+              <span className='sr-only'>LinkedIn</span>
+              <GitHub />
+            </a>
+
+            <a href='https://www.linkedin.com/in/adam-ridhwan/' target='_blank'>
+              <span className='sr-only'>GitHub</span>
+              <LinkedIn />
+            </a>
+
+            <a
+              href='https://docs.google.com/document/d/1qGoBMpqtCnwT3wELMZ21kWM2lrArJ6G6l2-8Tcj-sOk/edit?usp=sharing'
+              target='_blank'
+            >
+              <span className='sr-only'>Resume</span>
+              <Resume />
+            </a>
+          </div>
+        </div>
       </section>
     </>
   );
