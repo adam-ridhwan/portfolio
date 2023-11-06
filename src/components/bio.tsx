@@ -41,9 +41,9 @@ export const Bio = () => {
         </div>
 
         <div className='relative flex flex-col items-center gap-4'>
-          <H1>Adam Ridhwan</H1>
+          <H1 className='sm:text-6xl'>Adam Ridhwan</H1>
 
-          <H2 className='m-0 font-medium'>Fullstack software engineer</H2>
+          <H2 className='m-0 font-normal'>Fullstack software engineer</H2>
 
           <P className='m-0 text-center'>I build things for the web. </P>
 
