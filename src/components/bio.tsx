@@ -55,8 +55,6 @@ export const Bio = () => {
 
             <a href='https://github.com/adam-ridhwan' target='_blank' className='h-8 w-8'>
               <span className='sr-only'>LinkedIn</span>
-              {/*<Mail />*/}
-
               <GitHub />
             </a>
 
