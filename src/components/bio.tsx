@@ -63,11 +63,7 @@ export const Bio = () => {
               <LinkedIn />
             </a>
 
-            <a
-              href='https://docs.google.com/document/d/1qGoBMpqtCnwT3wELMZ21kWM2lrArJ6G6l2-8Tcj-sOk/edit?usp=sharing'
-              target='_blank'
-              className='h-8 w-8'
-            >
+            <a href='/resume.pdf' target='_blank' className='h-8 w-8'>
               <span className='sr-only'>Resume</span>
               <Resume />
             </a>
