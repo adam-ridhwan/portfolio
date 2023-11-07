@@ -56,7 +56,7 @@ export const ProjectList = () => {
       <section className='flex flex-col'>
         <H2>PROJECTS</H2>
 
-        <ol className='group flex flex-col gap-8 sm:gap-2'>
+        <ol className='group flex flex-col gap-8 md:gap-2'>
           {PROJECTS.map(project => (
             <ProjectItem
               key={project.name}

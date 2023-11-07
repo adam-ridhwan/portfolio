@@ -41,11 +41,11 @@ export const Bio = () => {
         </div>
 
         <div className='relative flex flex-col items-center gap-4'>
-          <H1 className='sm:text-6xl'>Adam Ridhwan</H1>
+          <H1 className='text-blue4 sm:text-6xl'>Adam Ridhwan</H1>
 
-          <H2 className='m-0 font-normal'>Fullstack software engineer</H2>
+          <H2 className='m-0 font-mono font-medium tracking-tighter'>Fullstack software engineer</H2>
 
-          <P className='m-0 text-center'>I build things for the web. </P>
+          <P className='m-0 text-center'>I like to build things for the web</P>
 
           <div className='mt-4 flex flex-row items-center justify-center gap-4'>
             <a href='mailto:adamridhwan.1@gmail.com' className='h-8 w-8'>
