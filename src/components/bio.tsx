@@ -48,7 +48,7 @@ export const Bio = () => {
           <P className='m-0 text-center'>I like to build things for the web</P>
 
           <div className='mt-4 flex flex-row items-center justify-center gap-4'>
-            <a href='mailto:adamridhwan.1@gmail.com' className='h-8 w-8'>
+            <a href='mailto:adamridhwan.1@gmail.com'>
               <span className='sr-only'>Contact</span>
               <Mail />
             </a>
