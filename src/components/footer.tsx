@@ -11,7 +11,7 @@ export const Footer = () => {
         <b>Next.js</b>
         <span>and</span>
         <Tailwind className='h-3 w-3' />
-        <b>Tailwind CSS</b>
+        <b>Tailwind</b>
       </div>
     </footer>
   );
