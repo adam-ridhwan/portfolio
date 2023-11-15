@@ -67,3 +67,7 @@ body::-webkit-scrollbar-thumb {
   background-color: hsl(var(--muted-foreground));
   border-radius: 20px;
 }
+
+.badge-gradient {
+  background: linear-gradient(90deg, rgb(248, 228, 167) 0%, rgb(252, 205, 212) 50.4868%, rgb(229, 213, 255) 100%);
+}

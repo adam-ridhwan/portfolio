@@ -1,5 +1,4 @@
-import H2 from '@/components/typography/h2';
-import P from '@/components/typography/p';
+import { H2, P } from '@/components/typography';
 
 export const About = () => {
   return (

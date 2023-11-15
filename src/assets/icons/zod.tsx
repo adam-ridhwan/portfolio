@@ -1,10 +1,6 @@
 import { cn } from '@/lib/utils';
 
-type Props = {
-  className?: string;
-};
-
-export const Zod = ({ className }: Props) => {
+export const Zod = ({ className }: SVGProps) => {
   return (
     <>
       <svg

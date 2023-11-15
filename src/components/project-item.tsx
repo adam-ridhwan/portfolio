@@ -1,12 +1,12 @@
 import { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
+import { Link } from '@/assets/icons/link';
 import { useWindowSize } from '@uidotdev/usehooks';
 
 import { cn } from '@/lib/utils';
+import { Badge } from '@/components/ui/badge';
 import { Project } from '@/components/project-list';
-import P from '@/components/typography/p';
-
-import { Link } from '../../public/icons/link';
+import { P } from '@/components/typography';
 
 type Props = {
   project: Project;
@@ -15,7 +15,7 @@ type Props = {
 };
 
 export const ProjectItem = ({
-  project: { id, name, link, image, description },
+  project: { id, name, link, image, description, type },
   hoveredItem,
   setHoveredItem,
 }: Props) => {
@@ -41,6 +41,7 @@ export const ProjectItem = ({
       >
         <div className='flex flex-row items-center gap-2 md:hidden'>
           <span className='text-xl font-medium text-secondary-foreground'>{name}</span>
+          <Badge className={cn('text-[#93370c]', 'badge-gradient')}>{type}</Badge>
         </div>
 
         <div className='relative aspect-video w-full md:min-w-[250px] md:max-w-[250px] '>
@@ -65,6 +66,7 @@ export const ProjectItem = ({
                 'group-hover/item:translate-x-0 group-hover/item:translate-y-0 group-hover/item:fill-primary'
               )}
             />
+            <Badge className={cn('text-[#93370c]', 'badge-gradient')}>{type}</Badge>
           </div>
           <P>{description}</P>
         </div>

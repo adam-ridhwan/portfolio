@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { spaceGrotesk } from '@/assets/fonts';
 
 import { cn } from '@/lib/utils';
 
@@ -9,7 +10,12 @@ type Props = {
 
 const H2 = ({ className, children }: Props) => {
   return (
-    <h2 className={cn('mb-4 text-2xl font-semibold tracking-wide text-secondary-foreground', className)}>
+    <h2
+      className={cn(
+        `${spaceGrotesk.className} mb-4 text-2xl font-semibold tracking-wide text-secondary-foreground`,
+        className
+      )}
+    >
       {children}
     </h2>
   );

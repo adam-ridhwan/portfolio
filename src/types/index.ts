@@ -1,0 +1,3 @@
+type SVGProps = {
+  className?: string;
+};

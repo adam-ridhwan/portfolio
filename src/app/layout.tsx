@@ -1,9 +1,8 @@
 import './globals.css';
 
+import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import { inter } from '@/assets/fonts';
 
 export const metadata: Metadata = {
   title: 'Adam Ridhwan',
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
   themeColor: 'dark',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
       <body className={`${inter.className} dark min-h-[100dvh] overflow-x-hidden`}>{children}</body>
