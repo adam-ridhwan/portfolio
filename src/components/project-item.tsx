@@ -1,11 +1,11 @@
 import { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
 import { Link } from '@/assets/icons/link';
+import { Project } from '@/types';
 import { useWindowSize } from '@uidotdev/usehooks';
 
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
-import { Project } from '@/components/project-list';
 import { P } from '@/components/typography';
 
 type Props = {

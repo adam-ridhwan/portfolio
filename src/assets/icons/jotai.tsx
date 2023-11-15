@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { SVGProps } from '@/types';
 
 import { cn } from '@/lib/utils';
 

@@ -1,3 +1,5 @@
+import { SVGProps } from '@/types';
+
 import { cn } from '@/lib/utils';
 
 export const PostgreSQL = ({ className }: SVGProps) => {
