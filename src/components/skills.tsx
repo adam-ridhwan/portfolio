@@ -1,4 +1,4 @@
-import { React } from '@/assets';
+import { React } from '@/assets/icons';
 
 import { TECHNOLOGIES } from '@/database/skills';
 import { Badge } from '@/components/ui/badge';

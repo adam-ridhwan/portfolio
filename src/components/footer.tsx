@@ -1,4 +1,4 @@
-import { NextJS, Tailwind, Vercel } from '@/assets';
+import { NextJS, Tailwind, Vercel } from '@/assets/icons';
 
 export const Footer = () => {
   return (

@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
-import { Link } from '@/assets/icons/link';
+import { ArrowLink } from '@/assets/icons';
 import { Project } from '@/types';
 import { useWindowSize } from '@uidotdev/usehooks';
 
@@ -60,7 +60,7 @@ export const ProjectItem = ({
             <span className='whitespace-nowrap text-xl font-medium text-secondary-foreground group-hover/item:text-primary'>
               {name}
             </span>
-            <Link
+            <ArrowLink
               className={cn(
                 'h-5 w-5 -translate-x-1 translate-y-1 fill-secondary-foreground transition-all',
                 'group-hover/item:translate-x-0 group-hover/item:translate-y-0 group-hover/item:fill-primary'

@@ -10,7 +10,7 @@ import {
   TypeScript,
   Zod,
   Zustand,
-} from '@/assets';
+} from '@/assets/icons';
 
 export const TECHNOLOGIES = [
   { Icon: NextJS, label: 'Next.js' },

@@ -1,4 +1,4 @@
-import { GitHub, LinkedIn, Mail, Resume } from '@/assets';
+import { GitHub, LinkedIn, Mail, Resume } from '@/assets/icons';
 
 export const ICON_LINKS = [
   { id: '1', name: 'Contact', Icon: Mail, link: 'mailto:adamridhwan.1@gmail.com' },

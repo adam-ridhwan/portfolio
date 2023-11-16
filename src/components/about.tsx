@@ -8,7 +8,7 @@ const Highlight = ({ children }: { children: ReactNode }) => (
 
 export const About = () => {
   return (
-    <section className='relative'>
+    <section>
       <H2>ABOUT</H2>
 
       <P>
