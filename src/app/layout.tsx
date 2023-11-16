@@ -4,6 +4,8 @@ import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { inter } from '@/assets/fonts';
 
+import { Footer } from '@/components/footer';
+
 export const metadata: Metadata = {
   title: 'Adam Ridhwan',
   description: 'Portfolio site for Adam Ridhwan',
@@ -17,7 +19,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} dark min-h-[100dvh] overflow-x-hidden`}>{children}</body>
+      <body className={`${inter.className} dark min-h-[100dvh] overflow-x-hidden`}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

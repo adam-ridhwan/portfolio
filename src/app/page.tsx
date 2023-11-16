@@ -1,6 +1,5 @@
 import { About } from '@/components/about';
 import { Bio } from '@/components/bio';
-import { Footer } from '@/components/footer';
 import { ProjectList } from '@/components/project-list';
 import { Skills } from '@/components/skills';
 
@@ -13,8 +12,6 @@ export default function Home() {
         <Skills />
         <ProjectList />
       </main>
-
-      <Footer />
     </>
   );
 }

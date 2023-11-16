@@ -4,7 +4,7 @@ export const PROJECTS: Project[] = [
   {
     id: '5',
     name: 'PixelCraft',
-    description: `An image generator platform with a prompt input that allows users can generate any image based on the input.`,
+    description: `An image generator platform with an input that allows users to generate any image based on the prompt.`,
     type: 'AI image generator',
     image: '/pixel-craft.png',
     link: 'https://pixel-craft-rust.vercel.app/',
@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
     id: '2',
     name: 'Flair',
     description: `An e-commerce website with a dynamic shopping cart, product filtering, a custom image gallery, and a seamless Stripe checkout process.`,
-    type: 'E-commerce',
+    type: 'Ecommerce',
     image: '/flair.png',
     link: 'https://flair.vercel.app',
   },
