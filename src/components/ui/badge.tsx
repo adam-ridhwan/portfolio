@@ -32,7 +32,7 @@ function Badge({ className, variant, ...props }: BadgeProps) {
 }
 
 const TechnologyBadge = ({ children }: { children: ReactNode }) => (
-  <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+  <Badge variant='secondary' className='text-md flex flex-row items-center gap-1 font-mono font-normal'>
     {children}
   </Badge>
 );

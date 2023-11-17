@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ArrowLink, Firebase, React, Redux, SCSS } from '@/assets/icons';
+import { Airtable, ArrowLink, Firebase, JavaScript, React, Redux, SCSS } from '@/assets/icons';
 
 import { cn } from '@/lib/utils';
 import { Badge, TechnologyBadge } from '@/components/ui/badge';
@@ -37,7 +37,7 @@ const MobileLayout = () => (
       and improve site usability and performance.
     </P>
 
-    <div className='mt-1 flex flex-row items-center gap-2'>
+    <div className='mt-1 flex flex-row flex-wrap items-center gap-2'>
       <TechnologyBadge>
         <React />
         React
@@ -47,13 +47,20 @@ const MobileLayout = () => (
         Redux
       </TechnologyBadge>
       <TechnologyBadge>
+        <JavaScript />
+        JavaScript
+      </TechnologyBadge>
+      <TechnologyBadge>
         <SCSS />
         SCSS
       </TechnologyBadge>
-
       <TechnologyBadge>
         <Firebase />
         Firebase
+      </TechnologyBadge>
+      <TechnologyBadge>
+        <Airtable />
+        Airtable
       </TechnologyBadge>
     </div>
   </div>
@@ -86,7 +93,7 @@ const DesktopLayout = () => (
         features and improve site usability and performance.
       </P>
 
-      <div className='flex flex-row items-center gap-2'>
+      <div className='flex flex-row flex-wrap items-center gap-2'>
         <TechnologyBadge>
           <React />
           React
@@ -96,13 +103,20 @@ const DesktopLayout = () => (
           Redux
         </TechnologyBadge>
         <TechnologyBadge>
+          <JavaScript />
+          JavaScript
+        </TechnologyBadge>
+        <TechnologyBadge>
           <SCSS />
           SCSS
         </TechnologyBadge>
-
         <TechnologyBadge>
           <Firebase />
           Firebase
+        </TechnologyBadge>
+        <TechnologyBadge>
+          <Airtable />
+          Airtable
         </TechnologyBadge>
       </div>
     </div>
