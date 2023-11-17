@@ -37,22 +37,22 @@ const MobileLayout = () => (
       and improve site usability and performance.
     </P>
 
-    <div className='flex flex-row items-center gap-2'>
+    <div className='mt-1 flex flex-row items-center gap-2'>
       <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
-        <React className='h-4 w-4' />
+        <React />
         React
       </Badge>
       <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
-        <Redux className='h-4 w-4' />
+        <Redux />
         Redux
       </Badge>
       <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
-        <SCSS className='h-4 w-4' />
+        <SCSS />
         SCSS
       </Badge>
 
       <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
-        <Firebase className='h-4 w-4' />
+        <Firebase />
         Firebase
       </Badge>
     </div>
@@ -88,20 +88,20 @@ const DesktopLayout = () => (
 
       <div className='flex flex-row items-center gap-2'>
         <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
-          <React className='h-4 w-4' />
+          <React />
           React
         </Badge>
         <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
-          <Redux className='h-4 w-4' />
+          <Redux />
           Redux
         </Badge>
         <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
-          <SCSS className='h-4 w-4' />
+          <SCSS />
           SCSS
         </Badge>
 
         <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
-          <Firebase className='h-4 w-4' />
+          <Firebase />
           Firebase
         </Badge>
       </div>

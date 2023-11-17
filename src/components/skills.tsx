@@ -18,7 +18,7 @@ export const Skills = () => {
       <div className='mt-2 flex flex-wrap justify-center gap-2 text-center'>
         {TECHNOLOGIES.map(({ Icon, label }) => (
           <Badge key={label} variant='secondary' className='text-md gap-1 font-mono font-normal '>
-            <Icon className='h-5 w-5' />
+            <Icon />
             <span>{label}</span>
           </Badge>
         ))}
