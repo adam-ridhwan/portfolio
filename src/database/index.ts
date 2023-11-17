@@ -1,4 +1,54 @@
+import {
+  CSS,
+  GitHub,
+  Jotai,
+  LinkedIn,
+  Mail,
+  MongoDB,
+  NextJS,
+  PostgreSQL,
+  Radix,
+  React,
+  Resume,
+  Tailwind,
+  TypeScript,
+  Zod,
+  Zustand,
+} from '@/assets/icons';
 import { Project } from '@/types';
+
+export const ICON_LINKS = [
+  {
+    id: '1',
+    name: 'Contact',
+    Icon: Mail,
+    link: 'mailto:adamridhwan.1@gmail.com',
+    handle: 'adamridhwan.1@gmail.com',
+  },
+  { id: '2', name: 'GitHub', Icon: GitHub, link: 'https://github.com/adam-ridhwan', handle: '@adam-ridhwan' },
+  {
+    id: '3',
+    name: 'LinkedIn',
+    Icon: LinkedIn,
+    link: 'https://www.linkedin.com/in/adam-ridhwan/',
+    handle: '@adam-ridhwan',
+  },
+  { id: '4', name: 'Resume', Icon: Resume, link: '/resume.pdf', handle: 'resume.pdf' },
+];
+
+export const TECHNOLOGIES = [
+  { Icon: NextJS, label: 'Next.js' },
+  { Icon: React, label: 'React' },
+  { Icon: TypeScript, label: 'TypeScript' },
+  { Icon: Tailwind, label: 'Tailwind' },
+  { Icon: CSS, label: 'CSS' },
+  { Icon: Radix, label: 'Radix UI' },
+  { Icon: MongoDB, label: 'MongoDB' },
+  { Icon: PostgreSQL, label: 'Postgresql' },
+  { Icon: Zod, label: 'Zod' },
+  { Icon: Zustand, label: 'Zustand' },
+  { Icon: Jotai, label: 'Jotai' },
+];
 
 export const PROJECTS: Project[] = [
   {

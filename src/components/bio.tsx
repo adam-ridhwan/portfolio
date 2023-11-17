@@ -1,6 +1,6 @@
 import Image from 'next/image';
+import { ICON_LINKS } from '@/database';
 
-import { ICON_LINKS } from '@/database/icon-links';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { H1, H2 } from '@/components/typography';
 

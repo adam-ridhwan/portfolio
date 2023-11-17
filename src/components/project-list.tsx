@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { PROJECTS } from '@/database';
 
-import { PROJECTS } from '@/database/projects';
 import { ProjectItem } from '@/components/project-item';
 import { H2 } from '@/components/typography';
 

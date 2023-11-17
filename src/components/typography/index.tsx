@@ -29,8 +29,12 @@ const H2 = ({ className, children }: Props) => {
   );
 };
 
+const H3 = ({ className, children }: Props) => {
+  return <h3 className={cn(`text-lg font-light text-secondary-foreground`, className)}>{children}</h3>;
+};
+
 const P = ({ className, children }: Props) => {
   return <p className={cn('mb-4 text-lg tracking-tight text-muted-foreground', className)}>{children}</p>;
 };
 
-export { H1, H2, P };
+export { H1, H2, H3, P };

@@ -1,6 +1,6 @@
 import { React } from '@/assets/icons';
+import { TECHNOLOGIES } from '@/database';
 
-import { TECHNOLOGIES } from '@/database/skills';
 import { Badge } from '@/components/ui/badge';
 import { H2, P } from '@/components/typography';
 

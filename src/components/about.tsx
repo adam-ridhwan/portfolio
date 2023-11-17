@@ -23,13 +23,6 @@ export const About = () => {
         intuitively implemented UX design.
       </P>
 
-      <P>
-        My passion for coding started during my music degree. One of the classes I enjoyed was not music
-        related at all. I took a Web Development class, which piqued my interest on building websites. Ever
-        since then, I went on a deep dive on coding and web development. Now, I strive to learn as much as I
-        can and make great code.
-      </P>
-
       <P className='m-0'>
         When I am not coding on my computer, I like to play badminton on the weekends with my girlfriend,
         chilling at home with my cats, or go hiking in the 4000ft peaks at New Hampshire.

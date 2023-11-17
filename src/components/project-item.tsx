@@ -6,7 +6,7 @@ import { useWindowSize } from '@uidotdev/usehooks';
 
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
-import { P } from '@/components/typography';
+import { H3, P } from '@/components/typography';
 
 type Props = {
   project: Project;
@@ -40,8 +40,15 @@ export const ProjectItem = ({
         className='flex flex-col gap-2 md:flex-row md:gap-8 md:p-4'
       >
         <div className='flex flex-row items-center gap-2 md:hidden'>
-          <span className='text-xl font-medium text-secondary-foreground'>{name}</span>
+          <H3 className=''>{name}</H3>
           <Badge className={cn('text-[#93370c]', 'badge-gradient')}>{type}</Badge>
+          <Badge
+            className={cn('hidden bg-[#f0fb96] text-[#373f51]', {
+              flex: name === 'PixelCraft' || name === 'Pondero',
+            })}
+          >
+            Ongoing
+          </Badge>
         </div>
 
         <div className='relative aspect-video w-full md:min-w-[250px] md:max-w-[250px] '>
@@ -57,9 +64,7 @@ export const ProjectItem = ({
 
         <div>
           <div className='hidden flex-row items-center gap-1 md:flex'>
-            <span className='whitespace-nowrap text-xl font-medium text-secondary-foreground group-hover/item:text-primary'>
-              {name}
-            </span>
+            <H3 className='whitespace-nowrap group-hover/item:text-primary'>{name}</H3>
             <ArrowLink
               className={cn(
                 'h-5 w-5 -translate-x-1 translate-y-1 fill-secondary-foreground transition-all',
@@ -67,6 +72,13 @@ export const ProjectItem = ({
               )}
             />
             <Badge className={cn('text-[#93370c]', 'badge-gradient')}>{type}</Badge>
+            <Badge
+              className={cn('hidden bg-[#f0fb96] text-[#373f51]', {
+                flex: name === 'PixelCraft' || name === 'Pondero',
+              })}
+            >
+              Ongoing
+            </Badge>
           </div>
           <P>{description}</P>
         </div>
