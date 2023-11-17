@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import { H2, P } from '@/components/typography';
 
 const Highlight = ({ children }: { children: ReactNode }) => (
-  <span className='text-secondary-foreground'>{children}</span>
+  <span className='text-lg font-light text-secondary-foreground'>{children}</span>
 );
 
 export const About = () => {
@@ -12,9 +12,8 @@ export const About = () => {
       <H2>ABOUT</H2>
 
       <P>
-        Hi, I&apos;m <Highlight>Adam</Highlight> 👋 I&apos;m{' '}
-        <Highlight>Fullstack Software Engineer</Highlight> based in{' '}
-        <Highlight>Boston, Massachusetts</Highlight>.
+        Hi, I&apos;m <Highlight>Adam</Highlight> 👋, a <Highlight>Fullstack Software Engineer</Highlight>{' '}
+        based in <Highlight>Boston, Massachusetts</Highlight>.
       </P>
 
       <P>

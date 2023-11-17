@@ -14,13 +14,11 @@ const H1 = ({ className, children }: Props) => {
   );
 };
 
-export default H1;
-
 const H2 = ({ className, children }: Props) => {
   return (
     <h2
       className={cn(
-        `${spaceGrotesk.className} mb-4 text-2xl font-semibold tracking-wide text-secondary-foreground`,
+        `${spaceGrotesk.className} mb-4 text-lg font-semibold tracking-wide text-secondary-foreground`,
         className
       )}
     >
@@ -34,7 +32,11 @@ const H3 = ({ className, children }: Props) => {
 };
 
 const P = ({ className, children }: Props) => {
-  return <p className={cn('mb-4 text-lg tracking-tight text-muted-foreground', className)}>{children}</p>;
+  return (
+    <p className={cn('mb-4 text-lg font-light tracking-tight text-muted-foreground', className)}>
+      {children}
+    </p>
+  );
 };
 
 export { H1, H2, H3, P };

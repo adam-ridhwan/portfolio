@@ -40,10 +40,10 @@ export const ProjectItem = ({
         className='flex flex-col gap-2 md:flex-row md:gap-8 md:p-4'
       >
         <div className='flex flex-row items-center gap-2 md:hidden'>
-          <H3 className=''>{name}</H3>
-          <Badge className={cn('text-[#93370c]', 'badge-gradient')}>{type}</Badge>
+          <H3>{name}</H3>
+          <Badge className={cn('badge-gradient text-[#93370c]')}>{type}</Badge>
           <Badge
-            className={cn('hidden bg-[#f0fb96] text-[#373f51]', {
+            className={cn('hidden bg-[#f0fb96] text-[#373f51] hover:bg-[#f0fb96]', {
               flex: name === 'PixelCraft' || name === 'Pondero',
             })}
           >
@@ -67,13 +67,13 @@ export const ProjectItem = ({
             <H3 className='whitespace-nowrap group-hover/item:text-primary'>{name}</H3>
             <ArrowLink
               className={cn(
-                'h-5 w-5 -translate-x-1 translate-y-1 fill-secondary-foreground transition-all',
+                'h-4 w-4 -translate-x-1 translate-y-1 fill-secondary-foreground transition-all',
                 'group-hover/item:translate-x-0 group-hover/item:translate-y-0 group-hover/item:fill-primary'
               )}
             />
-            <Badge className={cn('text-[#93370c]', 'badge-gradient')}>{type}</Badge>
+            <Badge className={cn('badge-gradient hover:none text-[#93370c]')}>{type}</Badge>
             <Badge
-              className={cn('hidden bg-[#f0fb96] text-[#373f51]', {
+              className={cn('hidden bg-[#f0fb96] text-[#373f51] hover:bg-[#f0fb96]', {
                 flex: name === 'PixelCraft' || name === 'Pondero',
               })}
             >

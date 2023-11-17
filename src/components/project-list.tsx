@@ -10,21 +10,19 @@ export const ProjectList = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   return (
-    <>
-      <section className='flex flex-col'>
-        <H2>PROJECTS</H2>
+    <section className='flex flex-col'>
+      <H2 className='md:mb-2'>PROJECTS</H2>
 
-        <ol className='group flex flex-col gap-8 md:gap-2'>
-          {PROJECTS.map(project => (
-            <ProjectItem
-              key={project.name}
-              project={project}
-              hoveredItem={hoveredItem}
-              setHoveredItem={setHoveredItem}
-            />
-          ))}
-        </ol>
-      </section>
-    </>
+      <ol className='group flex flex-col gap-8 md:gap-2'>
+        {PROJECTS.map(project => (
+          <ProjectItem
+            key={project.name}
+            project={project}
+            hoveredItem={hoveredItem}
+            setHoveredItem={setHoveredItem}
+          />
+        ))}
+      </ol>
+    </section>
   );
 };
