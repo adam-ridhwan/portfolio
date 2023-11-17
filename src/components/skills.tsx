@@ -1,7 +1,7 @@
 import { React } from '@/assets/icons';
 import { TECHNOLOGIES } from '@/database';
 
-import { Badge } from '@/components/ui/badge';
+import { TechnologyBadge } from '@/components/ui/badge';
 import { H2, P } from '@/components/typography';
 
 export const Skills = () => {
@@ -17,10 +17,10 @@ export const Skills = () => {
 
       <div className='mt-2 flex flex-wrap justify-center gap-2 text-center'>
         {TECHNOLOGIES.map(({ Icon, label }) => (
-          <Badge key={label} variant='secondary' className='text-md gap-1 font-mono font-normal '>
+          <TechnologyBadge key={label}>
             <Icon />
             <span>{label}</span>
-          </Badge>
+          </TechnologyBadge>
         ))}
       </div>
     </section>

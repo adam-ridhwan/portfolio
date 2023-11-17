@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { ArrowLink, Firebase, React, Redux, SCSS } from '@/assets/icons';
 
 import { cn } from '@/lib/utils';
-import { Badge } from '@/components/ui/badge';
+import { Badge, TechnologyBadge } from '@/components/ui/badge';
 import { H2, H3, P } from '@/components/typography';
 
 export const WorkExperience = () => (
@@ -38,23 +38,23 @@ const MobileLayout = () => (
     </P>
 
     <div className='mt-1 flex flex-row items-center gap-2'>
-      <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+      <TechnologyBadge>
         <React />
         React
-      </Badge>
-      <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+      </TechnologyBadge>
+      <TechnologyBadge>
         <Redux />
         Redux
-      </Badge>
-      <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+      </TechnologyBadge>
+      <TechnologyBadge>
         <SCSS />
         SCSS
-      </Badge>
+      </TechnologyBadge>
 
-      <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+      <TechnologyBadge>
         <Firebase />
         Firebase
-      </Badge>
+      </TechnologyBadge>
     </div>
   </div>
 );
@@ -87,23 +87,23 @@ const DesktopLayout = () => (
       </P>
 
       <div className='flex flex-row items-center gap-2'>
-        <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+        <TechnologyBadge>
           <React />
           React
-        </Badge>
-        <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+        </TechnologyBadge>
+        <TechnologyBadge>
           <Redux />
           Redux
-        </Badge>
-        <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+        </TechnologyBadge>
+        <TechnologyBadge>
           <SCSS />
           SCSS
-        </Badge>
+        </TechnologyBadge>
 
-        <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+        <TechnologyBadge>
           <Firebase />
           Firebase
-        </Badge>
+        </TechnologyBadge>
       </div>
     </div>
   </a>
