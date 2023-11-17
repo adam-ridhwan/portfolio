@@ -1,12 +1,13 @@
 import Image from 'next/image';
-import { ArrowLink } from '@/assets/icons';
+import { ArrowLink, Firebase, React, Redux, SCSS } from '@/assets/icons';
 
 import { cn } from '@/lib/utils';
+import { Badge } from '@/components/ui/badge';
 import { H2, H3, P } from '@/components/typography';
 
 export const WorkExperience = () => (
   <section>
-    <H2 className='md:mb-2'>WORK EXPERIENCE</H2>
+    <H2 className='md:mb-2 md:px-4'>WORK EXPERIENCE</H2>
     <MobileLayout />
     <DesktopLayout />
   </section>
@@ -31,10 +32,30 @@ const MobileLayout = () => (
       />
     </a>
 
-    <P className='m-0 md:mt-2'>
+    <P className='m-0'>
       Led a team of engineers to develop TV streaming app. Collaborated closely with COO to ship new features
       and improve site usability and performance.
     </P>
+
+    <div className='flex flex-row items-center gap-2'>
+      <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+        <React className='h-4 w-4' />
+        React
+      </Badge>
+      <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+        <Redux className='h-4 w-4' />
+        Redux
+      </Badge>
+      <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+        <SCSS className='h-4 w-4' />
+        SCSS
+      </Badge>
+
+      <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+        <Firebase className='h-4 w-4' />
+        Firebase
+      </Badge>
+    </div>
   </div>
 );
 
@@ -42,7 +63,7 @@ const DesktopLayout = () => (
   <a
     href='https://geaux.tv/'
     target='_blank'
-    className='group/item hidden flex-row gap-8 rounded-lg p-4 hover:bg-muted/70 md:flex'
+    className='group/item hidden flex-row gap-8 rounded-lg p-4 hover:bg-muted/60 md:flex'
   >
     <P className='m-0 whitespace-nowrap font-light text-muted-foreground/80'>May 2023 - Oct 2023</P>
 
@@ -60,10 +81,30 @@ const DesktopLayout = () => (
         />
       </div>
 
-      <P className='m-0 md:mt-2'>
+      <P className='mt-2'>
         Led a team of engineers to develop TV streaming app. Collaborated closely with COO to ship new
         features and improve site usability and performance.
       </P>
+
+      <div className='flex flex-row items-center gap-2'>
+        <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+          <React className='h-4 w-4' />
+          React
+        </Badge>
+        <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+          <Redux className='h-4 w-4' />
+          Redux
+        </Badge>
+        <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+          <SCSS className='h-4 w-4' />
+          SCSS
+        </Badge>
+
+        <Badge variant='secondary' className='text-md gap-1 font-mono font-normal'>
+          <Firebase className='h-4 w-4' />
+          Firebase
+        </Badge>
+      </div>
     </div>
   </a>
 );
