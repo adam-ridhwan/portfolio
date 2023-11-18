@@ -1,6 +1,7 @@
 import {
   CSS,
   GitHub,
+  JavaScript,
   Jotai,
   LinkedIn,
   Mail,
@@ -41,13 +42,13 @@ export const TECHNOLOGIES = [
   { Icon: React, label: 'React' },
   { Icon: TypeScript, label: 'TypeScript' },
   { Icon: Tailwind, label: 'Tailwind' },
-  { Icon: CSS, label: 'CSS' },
-  { Icon: Radix, label: 'Radix UI' },
+  // { Icon: CSS, label: 'CSS' },
+  // { Icon: Radix, label: 'Radix UI' },
   { Icon: MongoDB, label: 'MongoDB' },
-  { Icon: PostgreSQL, label: 'Postgresql' },
+  // { Icon: PostgreSQL, label: 'Postgresql' },
   { Icon: Zod, label: 'Zod' },
-  { Icon: Zustand, label: 'Zustand' },
-  { Icon: Jotai, label: 'Jotai' },
+  // { Icon: Zustand, label: 'Zustand' },
+  // { Icon: Jotai, label: 'Jotai' },
 ];
 
 export const PROJECTS: Project[] = [

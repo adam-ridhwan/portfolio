@@ -9,19 +9,12 @@ type Props = {
 };
 
 const H1 = ({ className, children }: Props) => {
-  return (
-    <h1 className={cn(`${spaceGrotesk.className} text-5xl tracking-[-0.3rem]`, className)}>{children}</h1>
-  );
+  return <h1 className={cn(`text-5xl tracking-[-0.3rem]`, className)}>{children}</h1>;
 };
 
 const H2 = ({ className, children }: Props) => {
   return (
-    <h2
-      className={cn(
-        `${spaceGrotesk.className} mb-4 text-lg font-semibold tracking-wide text-secondary-foreground`,
-        className
-      )}
-    >
+    <h2 className={cn(`mb-4 text-lg font-medium tracking-wide text-secondary-foreground`, className)}>
       {children}
     </h2>
   );

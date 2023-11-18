@@ -35,7 +35,7 @@ export const Bio = () => (
     <div className='relative flex flex-col items-center gap-4'>
       <H1 className='text-blue4 sm:text-6xl'>Adam Ridhwan</H1>
 
-      <H2 className='m-0 font-mono text-2xl font-medium tracking-tighter'>Fullstack Software Engineer</H2>
+      <H2 className='m-0 text-2xl font-medium tracking-tighter'>Fullstack Software Engineer</H2>
 
       <div className='mt-4 flex flex-row items-center justify-center gap-4'>
         {ICON_LINKS.map(({ id, name, Icon, link }) => (

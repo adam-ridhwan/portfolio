@@ -14,7 +14,7 @@ export const Skills = () => (
       personal projects is primarily:
     </P>
 
-    <div className='mt-2 flex flex-wrap justify-center gap-2 text-center'>
+    <div className='mt-2 flex flex-wrap gap-2 text-center md:pl-4'>
       {TECHNOLOGIES.map(({ Icon, label }) => (
         <TechnologyBadge key={label}>
           <Icon />
