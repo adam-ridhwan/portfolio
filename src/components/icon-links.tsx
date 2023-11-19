@@ -2,23 +2,34 @@
 
 import { MouseEvent } from 'react';
 import Link from 'next/link';
-import { ICON_LINKS } from '@/database';
+import { LINKS } from '@/database';
+import { LinkType } from '@/types';
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
+const isDevelopmentMode = process.env.NEXT_PUBLIC_NODE_ENV;
+
 const IconLinks = () => {
-  const handleClick = async (e: MouseEvent<HTMLAnchorElement>, id: string) => {
-    // e.preventDefault();
+  const handleClick = async (e: MouseEvent<HTMLAnchorElement>, link: LinkType) => {
+    if (isDevelopmentMode) e.preventDefault();
+
     const response = await fetch('/api/clicks', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        link,
+        time: new Date().toISOString(),
+      }),
     });
 
-    // console.log(await response.json());
+    console.log(await response.json());
   };
 
   return (
     <div className='mt-4 flex flex-row items-center justify-center gap-4'>
-      {ICON_LINKS.map(({ id, name, Icon, link }) => (
+      {LINKS.map(({ id, name, Icon, link }) => (
         <TooltipProvider key={id}>
           <Tooltip delayDuration={0}>
             <TooltipTrigger>

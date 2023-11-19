@@ -1,40 +1,42 @@
 import {
-  CSS,
   GitHub,
-  JavaScript,
-  Jotai,
   LinkedIn,
   Mail,
   MongoDB,
   NextJS,
-  PostgreSQL,
-  Radix,
   React,
   Resume,
   Tailwind,
   TypeScript,
   Zod,
-  Zustand,
 } from '@/assets/icons';
-import { Project, SVGProps } from '@/types';
+import { Link, LINKS_ENUM, Project } from '@/types';
 
-export const ICON_LINKS = [
+const { EMAIL, GITHUB, LINKEDIN, RESUME } = LINKS_ENUM;
+
+export const LINKS: Link[] = [
   {
-    id: '1',
-    name: 'Contact',
+    id: EMAIL,
+    name: 'Email',
     Icon: Mail,
     link: 'mailto:adamridhwan.1@gmail.com',
     handle: 'adamridhwan.1@gmail.com',
   },
-  { id: '2', name: 'GitHub', Icon: GitHub, link: 'https://github.com/adam-ridhwan', handle: '@adam-ridhwan' },
   {
-    id: '3',
+    id: GITHUB,
+    name: 'GitHub',
+    Icon: GitHub,
+    link: 'https://github.com/adam-ridhwan',
+    handle: '@adam-ridhwan',
+  },
+  {
+    id: LINKEDIN,
     name: 'LinkedIn',
     Icon: LinkedIn,
     link: 'https://www.linkedin.com/in/adam-ridhwan/',
     handle: '@adam-ridhwan',
   },
-  { id: '4', name: 'Resume', Icon: Resume, link: '/resume.pdf', handle: 'resume.pdf' },
+  { id: RESUME, name: 'Resume', Icon: Resume, link: '/resume.pdf', handle: 'resume.pdf' },
 ];
 
 export const TECHNOLOGIES = [

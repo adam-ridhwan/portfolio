@@ -7,7 +7,5 @@ export async function middleware(req: NextRequest) {
     nextUrl.searchParams.set('clientIp', ip);
   }
 
-  console.log(req);
-
   return NextResponse.rewrite(nextUrl);
 }

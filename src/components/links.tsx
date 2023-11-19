@@ -1,5 +1,5 @@
 import { ArrowLink } from '@/assets/icons';
-import { ICON_LINKS } from '@/database';
+import { LINKS } from '@/database';
 
 import { cn } from '@/lib/utils';
 import { H2, H3, P } from '@/components/typography';
@@ -9,7 +9,7 @@ const Links = () => (
     <H2>LINKS</H2>
 
     <div className='flex flex-col gap-6'>
-      {ICON_LINKS.map(({ id, name, link, handle }) => (
+      {LINKS.map(({ id, name, link, handle }) => (
         <div key={id} className='flex flex-row items-center gap-8'>
           <div className='w-20'>
             <P className='text-md m-0'>{name}</P>
