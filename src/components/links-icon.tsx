@@ -5,7 +5,7 @@ import { LINKS } from '@/database';
 import { updateLinkClicks } from '@/lib/updateLinkClicks';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
-const IconLinks = () => (
+const LinksIcon = () => (
   <div className='mt-4 flex flex-row items-center justify-center gap-4'>
     {LINKS.map(({ id, name, Icon, link }) => (
       <TooltipProvider key={id}>
@@ -25,4 +25,4 @@ const IconLinks = () => (
   </div>
 );
 
-export default IconLinks;
+export default LinksIcon;

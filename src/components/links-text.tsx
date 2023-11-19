@@ -7,7 +7,7 @@ import { updateLinkClicks } from '@/lib/updateLinkClicks';
 import { cn } from '@/lib/utils';
 import { H2, H3, P } from '@/components/typography';
 
-const Links = () => (
+const LinksText = () => (
   <section className='flex flex-col md:pl-4'>
     <H2>LINKS</H2>
 
@@ -39,4 +39,4 @@ const Links = () => (
   </section>
 );
 
-export default Links;
+export default LinksText;

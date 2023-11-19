@@ -1,6 +1,6 @@
 import { About } from '@/components/about';
 import { Bio } from '@/components/bio';
-import Links from '@/components/links';
+import LinksText from '@/components/links-text';
 import { ProjectList } from '@/components/project-list';
 import { Skills } from '@/components/skills';
 import { WorkExperience } from '@/components/work-experience';
@@ -14,7 +14,7 @@ export default function Home() {
         <WorkExperience />
         <Skills />
         <ProjectList />
-        <Links />
+        <LinksText />
       </main>
     </>
   );

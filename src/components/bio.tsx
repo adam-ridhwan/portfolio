@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import IconLinks from '@/components/icon-links';
+import LinksIcon from '@/components/links-icon';
 import { H1, H2 } from '@/components/typography';
 
 export const Bio = () => (
@@ -35,7 +35,7 @@ export const Bio = () => (
       <H1 className='text-blue4 sm:text-6xl'>Adam Ridhwan</H1>
       <H2 className='m-0 text-2xl font-medium tracking-tighter'>Fullstack Software Engineer</H2>
 
-      <IconLinks />
+      <LinksIcon />
     </div>
   </section>
 );
