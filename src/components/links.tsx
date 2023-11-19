@@ -1,7 +1,9 @@
+'use client';
+
 import { ArrowLink } from '@/assets/icons';
 import { LINKS } from '@/database';
 
-import { cn } from '@/lib/utils';
+import { cn, updateLinkClicks } from '@/lib/utils';
 import { H2, H3, P } from '@/components/typography';
 
 const Links = () => (
@@ -15,7 +17,12 @@ const Links = () => (
             <P className='text-md m-0'>{name}</P>
           </div>
 
-          <a href={link} target='_blank' className='group/item flex flex-row items-center gap-1'>
+          <a
+            href={link}
+            target='_blank'
+            className='group/item flex flex-row items-center gap-1'
+            onClick={e => updateLinkClicks(e, id)}
+          >
             <H3 className='text-md whitespace-nowrap group-hover/item:text-primary'>{handle}</H3>
 
             <ArrowLink
