@@ -11,5 +11,6 @@ export async function POST(request: NextRequest) {
   //   request.headers['x-forwarded-for'] ||
   //   // Fallback for localhost or non Vercel deployments
   //   '0.0.0.0';
+
   return new NextResponse(JSON.stringify(data, null, 2));
 }
