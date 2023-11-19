@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import { ICON_LINKS } from '@/database';
 
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import IconLinks from '@/components/icon-links';
 import { H1, H2 } from '@/components/typography';
 
 export const Bio = () => (
@@ -37,23 +36,7 @@ export const Bio = () => (
 
       <H2 className='m-0 text-2xl font-medium tracking-tighter'>Fullstack Software Engineer</H2>
 
-      <div className='mt-4 flex flex-row items-center justify-center gap-4'>
-        {ICON_LINKS.map(({ id, name, Icon, link }) => (
-          <TooltipProvider key={id}>
-            <Tooltip delayDuration={0}>
-              <TooltipTrigger>
-                <a href={link} target='_blank'>
-                  <span className='sr-only'>{name}</span>
-                  <Icon className='transition-all hover:scale-110' />
-                </a>
-              </TooltipTrigger>
-              <TooltipContent sideOffset={5}>
-                <p>{name}</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        ))}
-      </div>
+      <IconLinks />
     </div>
   </section>
 );

@@ -16,7 +16,7 @@ import {
   Zod,
   Zustand,
 } from '@/assets/icons';
-import { Project } from '@/types';
+import { Project, SVGProps } from '@/types';
 
 export const ICON_LINKS = [
   {

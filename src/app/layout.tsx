@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   authors: [{ name: 'Adam Ridhwan', url: 'https://www.linkedin.com/in/adam-ridhwan/' }],
   creator: 'Adam Ridhwan',
   publisher: 'Adam Ridhwan',
-  themeColor: 'dark',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
