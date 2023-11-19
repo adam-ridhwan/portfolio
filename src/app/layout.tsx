@@ -3,6 +3,7 @@ import './globals.css';
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { inter } from '@/assets/fonts';
+import { Analytics } from '@vercel/analytics/react';
 
 import { Footer } from '@/components/footer';
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
       <body className={`${inter.className} dark min-h-[100dvh] overflow-x-hidden`}>
+        <Analytics />
         {children}
         <Footer />
       </body>
