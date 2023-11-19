@@ -7,15 +7,13 @@ import { WorkExperience } from '@/components/work-experience';
 
 export default function Home() {
   return (
-    <>
-      <main className='relative flex flex-col gap-20 overflow-x-hidden overflow-y-hidden px-4 md:container md:overflow-visible'>
-        <Bio />
-        <About />
-        <WorkExperience />
-        <Skills />
-        <ProjectList />
-        <LinksText />
-      </main>
-    </>
+    <main className='relative flex flex-col gap-28 overflow-x-hidden overflow-y-hidden px-4 md:container md:overflow-visible'>
+      <Bio />
+      <About />
+      <WorkExperience />
+      <Skills />
+      <ProjectList />
+      <LinksText />
+    </main>
   );
 }

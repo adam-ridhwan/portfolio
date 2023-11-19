@@ -13,19 +13,19 @@ const H1 = ({ className, children }: Props) => {
 
 const H2 = ({ className, children }: Props) => {
   return (
-    <h2 className={cn(`mb-4 text-lg font-medium tracking-wide text-secondary-foreground`, className)}>
+    <h2 className={cn(`text-md mb-4 font-medium tracking-wide text-secondary-foreground`, className)}>
       {children}
     </h2>
   );
 };
 
 const H3 = ({ className, children }: Props) => {
-  return <h3 className={cn(`text-lg font-light text-secondary-foreground`, className)}>{children}</h3>;
+  return <h3 className={cn(`text-md font-light text-secondary-foreground`, className)}>{children}</h3>;
 };
 
 const P = ({ className, children }: Props) => {
   return (
-    <p className={cn('mb-4 text-lg font-light tracking-tight text-muted-foreground', className)}>
+    <p className={cn('text-md mb-4 font-light tracking-tight text-muted-foreground', className)}>
       {children}
     </p>
   );

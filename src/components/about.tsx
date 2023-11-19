@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import { H2, P } from '@/components/typography';
 
 const Highlight = ({ children }: { children: ReactNode }) => (
-  <span className='text-lg font-light text-secondary-foreground'>{children}</span>
+  <span className='text-md font-light text-secondary-foreground'>{children}</span>
 );
 
 export const About = () => (
@@ -16,9 +16,8 @@ export const About = () => (
     </P>
 
     <P>
-      I build responsive and modern web applications that is user-centric ranging from blog applications to
-      ecommerce platforms. I am passionate about coding and being pixel perfect using beautiful UI with
-      intuitively implemented UX design.
+      I enjoy building solid and user-friendly web applications. I am passionate about coding and being pixel
+      perfect using beautiful UI with intuitively implemented UX design.
     </P>
 
     <P className='m-0'>
