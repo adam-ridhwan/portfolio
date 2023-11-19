@@ -3,7 +3,8 @@
 import { ArrowLink } from '@/assets/icons';
 import { LINKS } from '@/database';
 
-import { cn, updateLinkClicks } from '@/lib/utils';
+import { updateLinkClicks } from '@/lib/updateLinkClicks';
+import { cn } from '@/lib/utils';
 import { H2, H3, P } from '@/components/typography';
 
 const Links = () => (
