@@ -8,12 +8,12 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 
 const IconLinks = () => {
   const handleClick = async (e: MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
+    // e.preventDefault();
     const response = await fetch('/api/clicks', {
       method: 'POST',
     });
 
-    console.log(await response.json());
+    // console.log(await response.json());
   };
 
   return (
