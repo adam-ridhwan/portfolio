@@ -23,8 +23,6 @@ const IconLinks = () => {
         time: new Date().toISOString(),
       }),
     });
-
-    console.log(await response.json());
   };
 
   return (
