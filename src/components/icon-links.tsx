@@ -11,7 +11,7 @@ const isDevelopmentMode = process.env.NEXT_PUBLIC_NODE_ENV;
 
 const IconLinks = () => {
   const handleClick = async (e: MouseEvent<HTMLAnchorElement>, link: LinkType) => {
-    if (isDevelopmentMode) e.preventDefault();
+    if (isDevelopmentMode === 'development') e.preventDefault();
 
     const response = await fetch('/api/clicks', {
       method: 'POST',
