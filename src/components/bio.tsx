@@ -1,6 +1,3 @@
-import Image from 'next/image';
-
-import LinksIcon from '@/components/links-icon';
 import { H1, H2 } from '@/components/typography';
 
 export const Bio = () => (

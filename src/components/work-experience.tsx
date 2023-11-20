@@ -70,9 +70,11 @@ const DesktopLayout = () => (
   <a
     href='https://geaux.tv/'
     target='_blank'
-    className='group/item hidden flex-row gap-8 rounded-lg p-4 hover:bg-muted/60 md:flex'
+    className='group/item hidden flex-row gap-2 rounded-lg p-4 hover:bg-muted/60 md:flex'
   >
-    <P className='m-0 whitespace-nowrap font-light text-muted-foreground/80'>May 2023 - Oct 2023</P>
+    <P className='m-0 min-w-[180px] whitespace-nowrap font-light text-muted-foreground/80'>
+      May 2023 - Oct 2023
+    </P>
 
     <div className='flex flex-col'>
       <div className='flex flex-row items-center gap-1'>
