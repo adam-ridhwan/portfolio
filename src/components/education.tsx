@@ -33,7 +33,7 @@ const Education = () => {
 
           <div className='flex flex-row items-center gap-2'>
             <div className='relative aspect-square h-12'>
-              <Image src='/bu.jpeg' alt='bu' fill className='rounded-lg object-cover' />
+              <Image src='/berklee.jpeg' alt='bu' fill className='rounded-lg object-cover' />
             </div>
 
             <div>
