@@ -13,7 +13,7 @@ const H1 = ({ className, children }: Props) => {
 
 const H2 = ({ className, children }: Props) => {
   return (
-    <h2 className={cn(`text-md mb-4 font-medium tracking-wide text-secondary-foreground`, className)}>
+    <h2 className={cn(`text-md mb-6 font-medium tracking-wide text-secondary-foreground`, className)}>
       {children}
     </h2>
   );
