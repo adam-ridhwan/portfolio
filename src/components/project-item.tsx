@@ -39,25 +39,25 @@ export const ProjectItem = ({
         target='_blank'
         className='flex flex-col gap-2 md:flex-row md:gap-8 md:p-4'
       >
-        <div className='flex flex-row items-center gap-2 md:hidden'>
-          <div className='flex flex-row items-center gap-1'>
-            <H3 className='whitespace-nowrap group-hover/item:text-primary'>{name}</H3>
-            <ArrowLink
-              className={cn(
-                'h-4 w-4 -translate-x-1 translate-y-1 fill-secondary-foreground transition-all',
-                'group-hover/item:translate-x-0 group-hover/item:translate-y-0 group-hover/item:fill-primary'
-              )}
-            />
-          </div>
-          <Badge className={cn('badge-gradient text-[#93370c]')}>{type}</Badge>
-          <Badge
-            className={cn('hidden bg-[#f0fb96] text-[#373f51] hover:bg-[#f0fb96]', {
-              flex: name === 'PixelCraft' || name === 'Pondero',
-            })}
-          >
-            Ongoing
-          </Badge>
-        </div>
+        {/*<div className='flex flex-row items-center gap-2 md:hidden'>*/}
+        {/*  <div className='flex flex-row items-center gap-1'>*/}
+        {/*    <H3 className='whitespace-nowrap group-hover/item:text-primary'>{name}</H3>*/}
+        {/*    <ArrowLink*/}
+        {/*      className={cn(*/}
+        {/*        'h-4 w-4 -translate-x-1 translate-y-1 fill-secondary-foreground transition-all',*/}
+        {/*        'group-hover/item:translate-x-0 group-hover/item:translate-y-0 group-hover/item:fill-primary'*/}
+        {/*      )}*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*  <Badge className={cn('badge-gradient text-[#93370c]')}>{type}</Badge>*/}
+        {/*  <Badge*/}
+        {/*    className={cn('hidden bg-[#f0fb96] text-[#373f51] hover:bg-[#f0fb96]', {*/}
+        {/*      flex: name === 'PixelCraft' || name === 'Pondero',*/}
+        {/*    })}*/}
+        {/*  >*/}
+        {/*    Ongoing*/}
+        {/*  </Badge>*/}
+        {/*</div>*/}
 
         <div className='relative aspect-video w-full md:min-w-[250px] md:max-w-[250px] '>
           <Image
@@ -71,7 +71,7 @@ export const ProjectItem = ({
         </div>
 
         <div>
-          <div className='hidden flex-row items-center gap-1 md:flex'>
+          <div className='flex flex-row items-center gap-1'>
             <H3 className='whitespace-nowrap group-hover/item:text-primary'>{name}</H3>
             <ArrowLink
               className={cn(

@@ -20,7 +20,7 @@ const H2 = ({ className, children }: Props) => {
 };
 
 const H3 = ({ className, children }: Props) => {
-  return <h3 className={cn(`text-md font-light text-secondary-foreground`, className)}>{children}</h3>;
+  return <h3 className={cn(`text-md font-normal text-secondary-foreground`, className)}>{children}</h3>;
 };
 
 const P = ({ className, children }: Props) => {
