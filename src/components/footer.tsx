@@ -5,12 +5,12 @@ export const Footer = () => (
     <div className='flex flex-row items-center gap-1'>
       <span>Built with</span>
       <NextJS className='h-3 w-3' />
-      <b>Next.js,</b>
+      <span>Next.js,</span>
       <Tailwind className='h-3 w-3' />
-      <b>Tailwind</b>
+      <span>Tailwind</span>
       <span>and</span>
       <Vercel className='h-3 w-3' />
-      <b>Vercel</b>
+      <span>Vercel</span>
     </div>
   </footer>
 );
