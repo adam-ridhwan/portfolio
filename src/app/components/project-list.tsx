@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import { PROJECTS } from '@/database';
 
-import { ProjectItem } from '@/components/project-item';
 import { H2 } from '@/components/typography';
+import { ProjectItem } from '@/app/components/project-item';
 
 export const ProjectList = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);

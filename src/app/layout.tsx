@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import { inter } from '@/assets/fonts';
 import { Analytics } from '@vercel/analytics/react';
 
-import { Footer } from '@/components/footer';
+import { Footer } from '@/app/components/footer';
 
 export const metadata: Metadata = {
   title: 'Adam Ridhwan',

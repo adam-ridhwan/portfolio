@@ -1,10 +1,10 @@
-import { About } from '@/components/about';
-import { Bio } from '@/components/bio';
-import Education from '@/components/education';
-import LinksText from '@/components/links-text';
-import { ProjectList } from '@/components/project-list';
-import { Skills } from '@/components/skills';
-import { WorkExperience } from '@/components/work-experience';
+import { About } from '@/app/components/about';
+import { Bio } from '@/app/components/bio';
+import Education from '@/app/components/education';
+import LinksText from '@/app/components/links-text';
+import { ProjectList } from '@/app/components/project-list';
+import { Skills } from '@/app/components/skills';
+import { WorkExperience } from '@/app/components/work-experience';
 
 export default function Home() {
   return (
