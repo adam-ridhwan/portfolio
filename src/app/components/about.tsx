@@ -11,8 +11,8 @@ export const About = () => (
     <H2>ABOUT</H2>
 
     <P>
-      Hi, I&apos;m <Highlight>Adam</Highlight> 👋, a <Highlight>Fullstack Software Engineer</Highlight> based
-      in <Highlight>Boston, Massachusetts</Highlight>.
+      Hi, I&apos;m <Highlight>Adam</Highlight> 👋, a <Highlight>Software Engineer</Highlight> based in{' '}
+      <Highlight>Boston, MA</Highlight>.
     </P>
 
     <P>

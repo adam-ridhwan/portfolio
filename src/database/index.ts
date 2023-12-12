@@ -45,7 +45,7 @@ export const LINKS: Link[] = [
 ];
 
 export const TECHNOLOGIES = [
-  { Icon: NextJS, label: 'Next.js' },
+  { Icon: NextJS, label: 'Next' },
   { Icon: React, label: 'React' },
   { Icon: TypeScript, label: 'TypeScript' },
   { Icon: Tailwind, label: 'Tailwind' },
@@ -91,12 +91,12 @@ export const PROJECTS: Project[] = [
     image: '/quizzzy.png',
     link: 'https://github.com/adam-ridhwan/quizzzy/',
   },
-  {
-    id: '4',
-    name: 'Geaux TV',
-    description: `A TV streaming platform offering a library of live tv shows. Features include a custom video player, url routing, and a responsive design.`,
-    type: 'TV streaming',
-    image: '/geaux.png',
-    link: 'https://github.com/adam-ridhwan/geaux-tv',
-  },
+  // {
+  //   id: '4',
+  //   name: 'Geaux TV',
+  //   description: `A TV streaming platform offering a library of live tv shows. Features include a custom video player, url routing, and a responsive design.`,
+  //   type: 'TV streaming',
+  //   image: '/geaux.png',
+  //   link: 'https://github.com/adam-ridhwan/geaux-tv',
+  // },
 ];
