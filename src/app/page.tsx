@@ -1,6 +1,5 @@
 import { About } from '@/app/components/about';
 import { Bio } from '@/app/components/bio';
-import Education from '@/app/components/education';
 import LinksText from '@/app/components/links-text';
 import { ProjectList } from '@/app/components/project-list';
 import { Skills } from '@/app/components/skills';
@@ -12,7 +11,6 @@ export default function Home() {
       <Bio />
       <About />
       <WorkExperience />
-      <Education />
       <Skills />
       <ProjectList />
       <LinksText />

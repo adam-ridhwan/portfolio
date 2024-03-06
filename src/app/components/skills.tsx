@@ -1,7 +1,5 @@
-import { React } from '@/assets/icons';
 import { TECHNOLOGIES } from '@/database';
 
-import { TechnologyBadge } from '@/components/ui/badge';
 import { H2, H3, P } from '@/components/typography';
 
 export const Skills = () => (
@@ -13,15 +11,6 @@ export const Skills = () => (
       fits best. However, there are certain technologies I particularly enjoy using. My choice tech stack for
       personal projects is primarily:
     </P>
-
-    {/*<div className='flex flex-wrap gap-2 text-center'>*/}
-    {/*  {TECHNOLOGIES.map(({ Icon, label }) => (*/}
-    {/*    <TechnologyBadge key={label}>*/}
-    {/*      <Icon />*/}
-    {/*      <span>{label}</span>*/}
-    {/*    </TechnologyBadge>*/}
-    {/*  ))}*/}
-    {/*</div>*/}
 
     <div className='grid grid-cols-2 gap-4'>
       {TECHNOLOGIES.map(({ Icon, label }) => (

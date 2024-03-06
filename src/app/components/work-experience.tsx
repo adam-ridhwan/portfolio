@@ -6,7 +6,6 @@ import {
   Firebase,
   Flutter,
   JavaScript,
-  MongoDB,
   Node,
   React,
   Redux,
@@ -28,10 +27,8 @@ const WORK_EXPERIENCE = [
       { Icon: Flutter, label: 'Flutter' },
       { Icon: Dart, label: 'Dart' },
       { Icon: Firebase, label: 'Firebase' },
-      { Icon: React, label: 'React' },
       { Icon: Node, label: 'Node' },
       { Icon: TypeScript, label: 'TypeScript' },
-      { Icon: MongoDB, label: 'MongoDB' },
     ],
   },
   {
