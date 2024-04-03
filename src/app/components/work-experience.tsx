@@ -39,8 +39,8 @@ const WORK_EXPERIENCE = [
       { Icon: React, label: 'React' },
       { Icon: Redux, label: 'Redux' },
       { Icon: JavaScript, label: 'JavaScript' },
-      { Icon: SCSS, label: 'SCSS' },
       { Icon: Firebase, label: 'Firebase' },
+      { Icon: SCSS, label: 'SCSS' },
     ],
   },
 ];
