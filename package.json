@@ -22,6 +22,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "envalid": "^8.0.0",
+    "es-abstract": "^1.23.3",
     "lucide-react": "^0.263.1",
     "mongodb": "^6.3.0",
     "next": "^14.0.3",

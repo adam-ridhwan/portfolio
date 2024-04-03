@@ -49,13 +49,8 @@ export const TECHNOLOGIES = [
   { Icon: React, label: 'React' },
   { Icon: TypeScript, label: 'TypeScript' },
   { Icon: Tailwind, label: 'Tailwind' },
-  // { Icon: CSS, label: 'CSS' },
-  // { Icon: Radix, label: 'Radix UI' },
   { Icon: MongoDB, label: 'MongoDB' },
-  // { Icon: PostgreSQL, label: 'Postgresql' },
   { Icon: Zod, label: 'Zod' },
-  // { Icon: Zustand, label: 'Zustand' },
-  // { Icon: Jotai, label: 'Jotai' },
 ];
 
 export const PROJECTS: Project[] = [
@@ -91,12 +86,4 @@ export const PROJECTS: Project[] = [
     image: '/quizzzy.png',
     link: 'https://github.com/adam-ridhwan/quizzzy/',
   },
-  // {
-  //   id: '4',
-  //   name: 'Geaux TV',
-  //   description: `A TV streaming platform offering a library of live tv shows. Features include a custom video player, url routing, and a responsive design.`,
-  //   type: 'TV streaming',
-  //   image: '/geaux.png',
-  //   link: 'https://github.com/adam-ridhwan/geaux-tv',
-  // },
 ];

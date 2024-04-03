@@ -16,8 +16,8 @@ export const About = () => (
     </P>
 
     <P>
-      I enjoy building solid and user-friendly web applications. I am passionate about coding and being pixel
-      perfect using beautiful UI with intuitively implemented UX design.
+      I enjoy building solid and user-friendly web applications using Next.js. I am passionate about coding
+      and being pixel perfect using beautiful UI with intuitively implemented UX design.
     </P>
 
     <P className='m-0'>
