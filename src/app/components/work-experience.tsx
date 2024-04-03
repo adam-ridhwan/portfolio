@@ -18,7 +18,7 @@ import { H2, H3, P } from '@/components/typography';
 
 const WORK_EXPERIENCE = [
   {
-    date: 'Dec 2023 - March 2024',
+    date: 'Dec 2023 - Mar 2024',
     title: 'Software Engineer - Approachable Geek',
     description: `Building apps people love.`,
     link: 'https://approachablegeek.com/',
