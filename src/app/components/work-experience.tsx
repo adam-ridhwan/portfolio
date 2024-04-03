@@ -25,9 +25,9 @@ const WORK_EXPERIENCE = [
     technologies: [
       { Icon: Flutter, label: 'Flutter' },
       { Icon: Dart, label: 'Dart' },
+      { Icon: TypeScript, label: 'TypeScript' },
       { Icon: Firebase, label: 'Firebase' },
       { Icon: Node, label: 'Node' },
-      { Icon: TypeScript, label: 'TypeScript' },
     ],
   },
   {
