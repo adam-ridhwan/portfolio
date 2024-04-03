@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 import {
-  Airtable,
   ArrowLink,
   Dart,
   Firebase,
@@ -19,7 +18,7 @@ import { H2, H3, P } from '@/components/typography';
 
 const WORK_EXPERIENCE = [
   {
-    date: 'Dec 2023 - Present',
+    date: 'Dec 2023 - March 2024',
     title: 'Software Engineer - Approachable Geek',
     description: `Building apps people love.`,
     link: 'https://approachablegeek.com/',
@@ -42,7 +41,6 @@ const WORK_EXPERIENCE = [
       { Icon: JavaScript, label: 'JavaScript' },
       { Icon: SCSS, label: 'SCSS' },
       { Icon: Firebase, label: 'Firebase' },
-      { Icon: Airtable, label: 'Airtable' },
     ],
   },
 ];
