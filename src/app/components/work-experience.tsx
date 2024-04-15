@@ -18,7 +18,7 @@ import { H2, H3, P } from '@/components/typography';
 
 const WORK_EXPERIENCE = [
   {
-    date: 'Dec 2023 - Mar 2024',
+    date: 'Dec 2023 - Apr 2024',
     title: 'Software Engineer - Approachable Geek',
     description: `Building apps people love.`,
     link: 'https://approachablegeek.com/',
@@ -27,11 +27,10 @@ const WORK_EXPERIENCE = [
       { Icon: Dart, label: 'Dart' },
       { Icon: TypeScript, label: 'TypeScript' },
       { Icon: Firebase, label: 'Firebase' },
-      { Icon: Node, label: 'Node' },
     ],
   },
   {
-    date: 'May 2023 - Oct 2023',
+    date: 'May 2023 - Nov 2023',
     title: 'Software Engineer - Geaux Network',
     description: 'Led a team of engineers to develop TV streaming app.',
     link: 'https://geaux.tv/',
@@ -40,7 +39,6 @@ const WORK_EXPERIENCE = [
       { Icon: Redux, label: 'Redux' },
       { Icon: JavaScript, label: 'JavaScript' },
       { Icon: Firebase, label: 'Firebase' },
-      { Icon: SCSS, label: 'SCSS' },
     ],
   },
 ];
