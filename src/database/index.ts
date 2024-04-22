@@ -41,7 +41,13 @@ export const LINKS: Link[] = [
     link: 'https://www.linkedin.com/in/adam-ridhwan/',
     handle: '@adam-ridhwan',
   },
-  { id: RESUME, name: 'Resume', Icon: Resume, link: '/resume.pdf', handle: 'resume.pdf' },
+  {
+    id: RESUME,
+    name: 'Resume',
+    Icon: Resume,
+    link: '/resume - Adam Ridhwan.pdf',
+    handle: 'resume.pdf',
+  },
 ];
 
 export const TECHNOLOGIES = [
