@@ -1,19 +1,14 @@
 import {
-  CSS,
   GitHub,
-  Jotai,
   LinkedIn,
   Mail,
   MongoDB,
   NextJS,
-  PostgreSQL,
-  Radix,
   React,
   Resume,
   Tailwind,
   TypeScript,
   Zod,
-  Zustand,
 } from '@/assets/icons';
 import { Link, LINKS_ENUM, Project } from '@/types';
 
