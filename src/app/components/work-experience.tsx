@@ -1,16 +1,5 @@
 import { Fragment } from 'react';
-import {
-  ArrowLink,
-  Dart,
-  Firebase,
-  Flutter,
-  JavaScript,
-  Node,
-  React,
-  Redux,
-  SCSS,
-  TypeScript,
-} from '@/assets/icons';
+import { ArrowLink, Dart, Firebase, Flutter, JavaScript, React, Redux, TypeScript } from '@/assets/icons';
 
 import { cn } from '@/lib/utils';
 import { TechnologyBadge } from '@/components/ui/badge';
@@ -30,7 +19,7 @@ const WORK_EXPERIENCE = [
     ],
   },
   {
-    date: 'May 2023 - Nov 2023',
+    date: 'Apr 2023 - Nov 2023',
     title: 'Software Engineer - Geaux Network',
     description: 'Led a team of engineers to develop TV streaming app.',
     link: 'https://geaux.tv/',
@@ -53,43 +42,37 @@ export const WorkExperience = () => (
 
 const MobileLayout = () => (
   <div className='flex flex-col gap-6'>
-    {WORK_EXPERIENCE.map(({ date, title, description, technologies }, index) => {
-      return (
-        <div key={index} className='flex flex-col gap-1 md:hidden'>
-          <P className='m-0 whitespace-nowrap font-light text-muted-foreground/80'>{date}</P>
+    {WORK_EXPERIENCE.map(({ date, title, description, technologies }, index) => (
+      <div key={index} className='flex flex-col gap-1 md:hidden'>
+        <P className='m-0 whitespace-nowrap font-light text-muted-foreground/80'>{date}</P>
 
-          <a
-            href='https://geaux.tv/'
-            target='_blank'
-            className='group/item flex w-max flex-row items-center gap-1 rounded-lg md:hidden'
-          >
-            <H3 className='whitespace-nowrap group-hover/item:text-primary'>{title}</H3>
+        <a
+          href='https://geaux.tv/'
+          target='_blank'
+          className='group/item flex w-max flex-row items-center gap-1 rounded-lg md:hidden'
+        >
+          <H3 className='whitespace-nowrap group-hover/item:text-primary'>{title}</H3>
 
-            <ArrowLink
-              className={cn(
-                'h-4 w-4 -translate-x-1 translate-y-1 fill-secondary-foreground transition-all',
-                'group-hover/item:translate-x-0 group-hover/item:translate-y-0 group-hover/item:fill-primary'
-              )}
-            />
-          </a>
+          <ArrowLink
+            className={cn(
+              'h-4 w-4 -translate-x-1 translate-y-1 fill-secondary-foreground transition-all',
+              'group-hover/item:translate-x-0 group-hover/item:translate-y-0 group-hover/item:fill-primary'
+            )}
+          />
+        </a>
 
-          <P className='m-0'>{description}</P>
+        <P className='m-0'>{description}</P>
 
-          <div className='mt-1 flex flex-row flex-wrap items-center gap-2'>
-            {technologies.map(({ Icon, label }, index) => {
-              return (
-                <Fragment key={index}>
-                  <TechnologyBadge>
-                    <Icon />
-                    {label}
-                  </TechnologyBadge>
-                </Fragment>
-              );
-            })}
-          </div>
+        <div className='mt-1 flex flex-row flex-wrap items-center gap-2'>
+          {technologies.map(({ Icon, label }, index) => (
+            <TechnologyBadge key={label}>
+              <Icon />
+              {label}
+            </TechnologyBadge>
+          ))}
         </div>
-      );
-    })}
+      </div>
+    ))}
   </div>
 );
 
@@ -119,16 +102,12 @@ const DesktopLayout = () => (
           <P className='mt-2'>{description}</P>
 
           <div className='flex flex-row flex-wrap items-center gap-2'>
-            {technologies.map(({ Icon, label }, index) => {
-              return (
-                <Fragment key={index}>
-                  <TechnologyBadge>
-                    <Icon />
-                    {label}
-                  </TechnologyBadge>
-                </Fragment>
-              );
-            })}
+            {technologies.map(({ Icon, label }) => (
+              <TechnologyBadge key={label}>
+                <Icon />
+                {label}
+              </TechnologyBadge>
+            ))}
           </div>
         </div>
       </a>

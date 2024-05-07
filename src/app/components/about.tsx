@@ -19,10 +19,5 @@ export const About = () => (
       I enjoy building solid and user-friendly web applications using Next.js. I am passionate about coding
       and being pixel perfect using beautiful UI with intuitively implemented UX design.
     </P>
-
-    <P className='m-0'>
-      When I am not coding on my computer, I like to play badminton on the weekends with my girlfriend,
-      chilling at home with my cats, or go hiking in the 4000ft peaks at New Hampshire.
-    </P>
   </section>
 );

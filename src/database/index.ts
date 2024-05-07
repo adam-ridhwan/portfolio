@@ -40,7 +40,7 @@ export const LINKS: Link[] = [
     id: RESUME,
     name: 'Resume',
     Icon: Resume,
-    link: '/resume - Adam Ridhwan.pdf',
+    link: '/Resume - Adam Ridhwan.pdf',
     handle: 'resume.pdf',
   },
 ];
