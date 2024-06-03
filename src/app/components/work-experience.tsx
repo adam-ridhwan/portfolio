@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import { ArrowLink, Dart, Firebase, Flutter, JavaScript, React, Redux, TypeScript } from '@/assets/icons';
 
 import { cn } from '@/lib/utils';
@@ -7,9 +6,21 @@ import { H2, H3, P } from '@/components/typography';
 
 const WORK_EXPERIENCE = [
   {
-    date: 'Dec 2023 - Apr 2024',
+    date: 'June 2024 - Present',
+    title: 'Software Engineer I - Ikigai Labs',
+    description: 'Building frontend for Generative AI.',
+    link: 'https://www.ikigailabs.io/',
+    technologies: [
+      { Icon: React, label: 'React' },
+      { Icon: Redux, label: 'Redux' },
+      { Icon: TypeScript, label: 'TypeScript' },
+    ],
+  },
+
+  {
+    date: 'Dec 2023 - Mar 2024',
     title: 'Software Engineer - Approachable Geek',
-    description: `Building apps people love.`,
+    description: 'Built apps people love.',
     link: 'https://approachablegeek.com/',
     technologies: [
       { Icon: Flutter, label: 'Flutter' },
@@ -64,7 +75,7 @@ const MobileLayout = () => (
         <P className='m-0'>{description}</P>
 
         <div className='mt-1 flex flex-row flex-wrap items-center gap-2'>
-          {technologies.map(({ Icon, label }, index) => (
+          {technologies.map(({ Icon, label }) => (
             <TechnologyBadge key={label}>
               <Icon />
               {label}
