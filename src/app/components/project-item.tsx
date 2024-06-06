@@ -1,4 +1,3 @@
-import { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
 import { ArrowLink } from '@/assets/icons';
 import { Project } from '@/types';
@@ -10,28 +9,17 @@ import { H3, P } from '@/components/typography';
 
 type Props = {
   project: Project;
-  hoveredItem: string | null;
-  setHoveredItem: Dispatch<SetStateAction<string | null>>;
 };
 
-export const ProjectItem = ({
-  project: { id, name, link, image, description, type },
-  hoveredItem,
-  setHoveredItem,
-}: Props) => {
+export const ProjectItem = ({ project: { name, link, image, description, type } }: Props) => {
   const { width } = useWindowSize();
-
-  const handleMouseEnter = (id: string) => setHoveredItem(id);
-  const handleMouseLeave = () => setHoveredItem(null);
 
   return (
     <li
       className={cn(
-        'group/item rounded-lg transition-all md:hover:bg-muted/60',
-        width! > 768 && hoveredItem && hoveredItem !== id && 'opacity-50'
+        'group/item rounded-lg transition-opacity md:hover:bg-muted/60',
+        width! > 768 && 'group-hover:opacity-50 group-hover:hover:opacity-100'
       )}
-      onMouseEnter={() => handleMouseEnter(id)}
-      onMouseLeave={handleMouseLeave}
     >
       <a
         key={name}

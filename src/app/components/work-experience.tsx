@@ -88,13 +88,13 @@ const MobileLayout = () => (
 );
 
 const DesktopLayout = () => (
-  <>
+  <div className='group'>
     {WORK_EXPERIENCE.map(({ date, title, description, link, technologies }, index) => (
       <a
         key={index}
         href={link}
         target='_blank'
-        className='group/item hidden flex-row gap-2 rounded-lg p-4 hover:bg-muted/60 md:flex'
+        className='group/item hidden flex-row gap-2 rounded-lg p-4 transition-opacity hover:bg-muted/60 group-hover:opacity-50 group-hover:hover:opacity-100 md:flex'
       >
         <P className='m-0 min-w-[180px] whitespace-nowrap font-light text-muted-foreground/80'>{date}</P>
 
@@ -123,5 +123,5 @@ const DesktopLayout = () => (
         </div>
       </a>
     ))}
-  </>
+  </div>
 );
