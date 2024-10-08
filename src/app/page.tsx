@@ -12,7 +12,7 @@ export default function Home() {
       <About />
       <WorkExperience />
       <Skills />
-      <ProjectList />
+      {/*<ProjectList />*/}
       <LinksText />
     </main>
   );

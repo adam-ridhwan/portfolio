@@ -7,7 +7,7 @@ import { H2, H3, P } from '@/components/typography';
 const WORK_EXPERIENCE = [
   {
     date: 'June 2024 - Present',
-    title: 'Software Engineer I - Ikigai Labs',
+    title: 'Software Engineer - Ikigai Labs',
     description: 'Building frontend for Generative AI.',
     link: 'https://www.ikigailabs.io/',
     technologies: [
